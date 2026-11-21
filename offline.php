@@ -22,8 +22,10 @@ $pageRobots = 'noindex,nofollow';
   <a class="button button--blue" href="/index.php">Zur Startseite</a>
 </section>
 </div>
-<?php require __DIR__ . '/includes/footer.php'; ?>
+
+
 </main>
 </div>
+<?php require __DIR__ . '/includes/footer.php'; ?>
 </body>
 </html>

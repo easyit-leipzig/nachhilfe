@@ -1,0 +1,23 @@
+/* easyIT-Farbsystem für geschützte Lern- und Lehrerbereiche */
+:root{--internal-blue:#0a3456;--internal-gold:#ffca45;--internal-bg:#081d36;--internal-border:rgba(80,217,243,.28);}
+body.internal-login-page,body.internal-portal{background:linear-gradient(140deg,#06172c,#0c3152);color:#eff9ff;min-height:100vh;font-family:Inter,system-ui,-apple-system,"Segoe UI",sans-serif;}
+.internal-topbar{background:linear-gradient(110deg,#071a31,#104263);border-top:3px solid #50d9f3;border-bottom:1px solid var(--internal-border);min-height:86px;gap:1rem;}
+.internal-topbar__brand{display:flex;align-items:center;gap:.8rem;color:#fff;font-size:1.2rem;}
+.internal-topbar__brand img{width:90px;height:60px;object-fit:contain;}
+.internal-topbar a:hover{text-decoration:underline;}
+.internal-shell{min-height:calc(100vh - 165px);}
+.internal-nav{background:#0c2c4b;border-right:1px solid var(--internal-border);}
+.internal-nav a{color:#d9f1ff;padding:.8rem 1rem;}
+.internal-nav a:hover,.internal-nav a:focus{background:#164769;color:#fff;}
+.internal-main{padding:clamp(16px,3vw,36px);}
+.internal-hero,.internal-card,.internal-login{background:#123655;color:#f2f9ff;border:1px solid var(--internal-border);box-shadow:0 12px 28px rgba(0,0,0,.15);}
+.internal-hero h1,.internal-card h2,.internal-card h3,.internal-login h1{color:#fff;}
+.internal-form label{color:#f0f9ff;}
+.internal-form input{background:#f8fcff;color:#1b2f43;border-color:#aacddd;}
+.internal-form button{background:var(--internal-gold);color:#12263a;}
+.internal-alert,.internal-notice{color:#18334b;}
+.internal-footer{background:#06192f;border-top:1px solid var(--internal-border);padding:1rem 1.5rem;color:#bcd7e8;text-align:center;}
+.internal-footer a{color:#77e4fa;}
+.internal-login a{color:#88dff4;}
+.internal-login .internal-brand img{margin:auto;max-height:145px;object-fit:contain;}
+@media(max-width:760px){.internal-topbar{align-items:center;flex-wrap:wrap;}.internal-topbar div{flex-wrap:wrap;justify-content:flex-end;}.internal-nav{border-right:0;border-bottom:1px solid var(--internal-border);}}

@@ -120,8 +120,10 @@ $pageSchemas = [[
   <a class="button button--gold" href="/kontakt.php?schulform=<?= rawurlencode($type['name']) ?>">Kontakt aufnehmen</a>
 </section>
 </div>
-<?php require __DIR__ . '/footer.php'; ?>
+
+
 </main>
 </div>
+<?php require __DIR__ . '/footer.php'; ?>
 </body>
 </html>

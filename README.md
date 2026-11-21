@@ -1,4 +1,4 @@
-# easyIT Nachhilfe – bereinigtes Website-Paket
+# easyIT Nachhilfe – bereinigtes Website-Paket mit easyIT-Design
 
 Dieses Paket enthält den aktiven PHP-Webauftritt, den Adminbereich, Konfigurationen, benötigte Ressourcen sowie Datenbankgrundlage und Migrationen.
 
@@ -18,3 +18,7 @@ Die Konfigurationsdateien der hochgeladenen Version wurden unverändert übernom
 Die Bilder für dynamisch konfigurierte Startseiten-Blöcke wurden überwiegend beibehalten, weil die produktive Datenbank andere Bildpfade enthalten kann als der mitgelieferte Datenbankstand.
 
 Dies ist eine bereinigte Momentaufnahme, kein getestetes Live-Deployment. Einzelheiten in `BEREINIGUNG.md`.
+
+## Layoutanpassung 21.11.2026
+
+Header, Hauptbereich und Footer verwenden die dunkelblau-türkise easyIT-Designlinie mit dem Löwenlogo. Die zentralen Layoutdateien und eigene Stylesheets erlauben weitere Anpassungen ohne Einzelbearbeitung der Fachseiten. Details siehe `EASYIT_DESIGN.md`.

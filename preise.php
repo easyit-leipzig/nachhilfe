@@ -55,4 +55,6 @@ $offers = offer_list(true);
 <section class="section"><header class="section-heading"><div><span class="eyebrow">Organisation</span><h2>So entsteht eine verlässliche Zusammenarbeit</h2></div></header><div class="steps"><article class="step"><div><h3>Anfrage</h3><p>Fach, Klassenstufe, Thema und gewünschter Zeitraum werden kurz beschrieben.</p></div></article><article class="step"><div><h3>Abstimmung</h3><p>Unterrichtsform, Dauer, Termin und Preis werden vor Beginn eindeutig vereinbart.</p></div></article><article class="step"><div><h3>Unterricht</h3><p>Die Stunde orientiert sich an Ziel und aktuellem Lernstand.</p></div></article><article class="step"><div><h3>Rückmeldung</h3><p>Fortschritt und nächste Schritte werden transparent besprochen.</p></div></article></div></section>
 <section class="section prose"><h2>Absagen und Terminänderungen</h2><p>Eine faire Absageregel schützt beide Seiten. Die konkrete Frist und mögliche Ausfallkosten werden bei der Terminvereinbarung eindeutig kommuniziert.</p></section>
 
-</div><?php require __DIR__ . '/includes/footer.php'; ?></main></div></body></html>
+</div>
+</main></div>
+<?php require __DIR__ . '/includes/footer.php'; ?></body></html>

@@ -73,4 +73,6 @@ $pageCanonical=$site['base_url'].'/faecher.php';
 <a href="/ethik-nachhilfe-leipzig.php">Ethik-Nachhilfe Leipzig →</a>
 </article></div></section>
 <section class="section cta"><div><span class="eyebrow">Noch unsicher?</span><h2>Fach und Bedarf gemeinsam klären</h2><p>Eine kurze Beschreibung der aktuellen Situation genügt für den ersten Kontakt.</p></div><a class="button button--gold" href="/kontakt.php">Kontakt aufnehmen</a></section>
-</div><?php require __DIR__.'/includes/footer.php'; ?></main></div></body></html>
+</div>
+</main></div>
+<?php require __DIR__.'/includes/footer.php'; ?></body></html>

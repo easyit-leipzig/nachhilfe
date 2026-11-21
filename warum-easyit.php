@@ -73,4 +73,6 @@ $pageCanonical = $site['base_url'] . '/warum-easyit.php';
 </section>
 <section class="section cta"><div><h2>Passt diese Arbeitsweise zu dir?</h2><p>In einem ersten Gespräch klären wir Fach, Ziel und aktuelle Schwierigkeiten.</p></div><a class="button button--gold" href="/kontakt.php">Unverbindlich anfragen</a></section>
 
-</div><?php require __DIR__ . '/includes/footer.php'; ?></main></div></body></html>
+</div>
+</main></div>
+<?php require __DIR__ . '/includes/footer.php'; ?></body></html>

@@ -19,4 +19,6 @@ $pageCanonical = $site['base_url'] . '/sitemap.php';
 <article class="card"><h2>Schulformen</h2><ul><?php foreach($schoolTypes as $type): ?><li><a href="/<?= e($type['file']) ?>"><?= e($type['name']) ?></a></li><?php endforeach; ?></ul></article>
 </div>
 <div class="section"><h2>Service</h2><div class="mini-link-grid"><a href="/warum-easyit.php"><strong>Warum easyIT?</strong></a><a href="/ueber-mich.php"><strong>Über mich</strong></a><a href="/methodik.php"><strong>Methodik</strong></a><a href="/preise.php"><strong>Preise</strong></a><a href="/bewertungen.php"><strong>Bewertungen</strong></a><a href="/faq.php"><strong>FAQ</strong></a><a href="/jobs.php"><strong>Jobs</strong></a><a href="/kontakt.php"><strong>Kontakt</strong></a></div></div>
-</section></div><?php require __DIR__.'/includes/footer.php'; ?></main></div></body></html>
+</section></div>
+</main></div>
+<?php require __DIR__.'/includes/footer.php'; ?></body></html>

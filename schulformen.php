@@ -14,4 +14,6 @@ $pageCanonical = $site['base_url'] . '/schulformen.php';
 <section class="section"><header class="section-heading"><div><span class="eyebrow">Übersicht</span><h2>Passende Unterstützung finden</h2></div></header><div class="card-grid card-grid--3">
 <?php foreach ($schoolTypes as $type): ?><article class="card"><h3><?= e($type['name']) ?></h3><p><?= e($type['focus']) ?></p><a href="/<?= e($type['file']) ?>">Mehr erfahren →</a></article><?php endforeach; ?>
 </div></section>
-</div><?php require __DIR__.'/includes/footer.php'; ?></main></div></body></html>
+</div>
+</main></div>
+<?php require __DIR__.'/includes/footer.php'; ?></body></html>

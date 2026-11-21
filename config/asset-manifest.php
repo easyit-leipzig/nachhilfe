@@ -2,6 +2,7 @@
 declare(strict_types=1);
 
 return [
+    'assets/css/easyit-theme.css' => 'assets/css/easyit-theme.css',
     'assets/css/admin.css' => 'assets/css/admin.1f369169bc7c.css',
     'assets/css/content.css' => 'assets/css/content.701997f4d583.css',
     'assets/css/footer.css' => 'assets/css/footer.664f675d327e.css',

@@ -131,8 +131,10 @@ $selectedLocation = $old['location'] ?? $prefillLocation;
   </aside>
 </section>
 </div>
-<?php require __DIR__ . '/includes/footer.php'; ?>
+
+
 </main>
 </div>
+<?php require __DIR__ . '/includes/footer.php'; ?>
 </body>
 </html>

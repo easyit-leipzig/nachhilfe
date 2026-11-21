@@ -101,4 +101,6 @@ $mainHeading = $tutor ? 'Bewertungen für ' . (string)$tutor['display_name'] : '
 
 <section class="section"><div class="cta"><div><span class="eyebrow">Unverbindlich kennenlernen</span><h2>Probestunde mit <?= e((string)$tutor['display_name']) ?> vereinbaren</h2><p>Im ersten Termin klären wir Lernstand, Ziel und die passende Form der Unterstützung.</p></div><a class="button button--primary" href="<?= e(app_path('/kontakt.php')) ?>?anliegen=probestunde&amp;tutor=<?= rawurlencode((string)$tutor['slug']) ?>">Probestunde vereinbaren</a></div></section>
 <?php endif; ?>
-</div><?php require __DIR__ . '/includes/footer.php'; ?></main></div></body></html>
+</div>
+</main></div>
+<?php require __DIR__ . '/includes/footer.php'; ?></body></html>

@@ -10,6 +10,7 @@ $user = admin_user();
 <meta name="robots" content="noindex,nofollow">
 <title><?= admin_e($adminTitle ?? 'Admin') ?> | easyIT</title>
 <link rel="stylesheet" href="<?= e(asset_url('assets/css/admin.css')) ?>">
+<link rel="stylesheet" href="<?= e(asset_url('assets/css/easyit-admin.css')) ?>">
 </head>
 <body class="admin-body">
 <header class="admin-header">

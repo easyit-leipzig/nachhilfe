@@ -1,0 +1,26 @@
+/* easyIT Farbwelt für die CMS-Administration; Formulare und Tabellen bleiben funktional */
+:root{--blue:#0a89ba;--dark:#071c34;--gold:#ffca45;--bg:#091e37;--line:rgba(88,216,246,.28);--text:#edf6fd;}
+body.admin-body{background:linear-gradient(160deg,#07192f,#0d2b4b);color:var(--text);min-height:100vh;}
+.admin-header{background:linear-gradient(110deg,#07182c,#0e3555);border-top:3px solid #50d9f3;border-bottom:1px solid var(--line);box-shadow:0 12px 26px rgba(0,0,0,.22);align-items:center;}
+.admin-header nav{gap:.35rem .6rem;align-items:center;}
+.admin-header nav a,.admin-header .admin-link-button{padding:.45rem .6rem;border:1px solid transparent;border-radius:8px;text-decoration:none;font-size:.88rem;}
+.admin-header nav a:hover,.admin-header .admin-link-button:hover{background:#16476b;border-color:var(--line);text-decoration:none;}
+.admin-brand-logo{height:50px;max-width:100px;object-fit:contain;}
+.admin-main{max-width:1460px;min-height:67vh;padding:clamp(18px,3vw,38px);}
+.admin-card,.admin-login{background:#123653;color:#ecf8ff;border:1px solid var(--line);box-shadow:0 12px 28px rgba(0,0,0,.14);}
+.admin-card h1,.admin-card h2,.admin-card h3{color:#f5fcff;}
+.admin-card small{color:#b7d1e2;}
+.admin-form label,.admin-fieldset legend{color:#eaf7fc;}
+.admin-form input,.admin-form textarea,.admin-form select,.admin-password-reset input{color:#182c3e;background:#f7fbff;border-color:#89b8d0;}
+.admin-table{background:#10324f;color:#f3faff;}
+.admin-table thead{background:#16466b;}
+.admin-table th,.admin-table td{border-bottom-color:var(--line);}
+.admin-table a,.admin-help a,.admin-card a:not(.admin-btn){color:#79e4fa;}
+.admin-alert,.admin-notice--error{color:#742f32;background:#ffebeb;}
+.admin-notice--success{color:#19573e;background:#e3f8ed;}
+.admin-btn{background:#0c7eaa;}
+.admin-btn--gold{background:var(--gold);color:#112738;}
+.admin-btn--danger{background:#ab3249;}
+.admin-footer{background:#071c34;border-top:1px solid var(--line);color:#b5d5e7;text-align:center;padding:1.2rem;}
+.admin-footer a{color:#76e7fb;text-decoration:none;}
+@media(max-width:920px){.admin-header{flex-wrap:wrap;gap:.6rem;padding:1rem;}.admin-header nav{width:100%;}}

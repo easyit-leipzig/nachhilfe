@@ -144,8 +144,10 @@ $pageSchemas = [
   <a class="button button--gold" href="/kontakt.php?ort=<?= rawurlencode($area['name']) ?>">Kontakt aufnehmen</a>
 </section>
 </div>
-<?php require __DIR__ . '/footer.php'; ?>
+
+
 </main>
 </div>
+<?php require __DIR__ . '/footer.php'; ?>
 </body>
 </html>

@@ -236,9 +236,11 @@ $pageCanonical = canonical_url($site, '/');
 <?php render_index_content(6, 'replace'); ?>
 <?php render_index_content(6, 'after'); ?>
 </div>
-<?php require __DIR__ . '/includes/footer.php'; ?>
+
+
 </main>
 </div>
+<?php require __DIR__ . '/includes/footer.php'; ?>
 <script src="<?= e(app_path('/assets/js/learning-slider.js')) ?>" defer></script>
 </body>
 </html>

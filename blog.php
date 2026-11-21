@@ -36,8 +36,10 @@ $posts = cms_items('blog', 'published', 100);
 <?php else: ?><p>Der Lernblog wird derzeit redaktionell vorbereitet.</p><?php endif; ?>
 </section>
 </div>
-<?php require __DIR__ . '/includes/footer.php'; ?>
+
+
 </main>
 </div>
+<?php require __DIR__ . '/includes/footer.php'; ?>
 </body>
 </html>

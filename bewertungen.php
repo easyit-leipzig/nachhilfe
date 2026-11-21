@@ -45,8 +45,10 @@ $reviews = cms_items('review', 'published', 50);
 <?php endif; ?>
 </section>
 </div>
-<?php require __DIR__ . '/includes/footer.php'; ?>
+
+
 </main>
 </div>
+<?php require __DIR__ . '/includes/footer.php'; ?>
 </body>
 </html>

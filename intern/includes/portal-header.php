@@ -49,10 +49,11 @@ $items = $menus[$role] ?? [];
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title><?= e($portalTitle ?? 'Interner Bereich') ?> | easyIT</title>
 <link rel="stylesheet" href="<?= e(app_path('/assets/css/internal.css')) ?>">
+<link rel="stylesheet" href="<?= e(app_path('/assets/css/easyit-portal.css')) ?>">
 </head>
 <body class="internal-portal">
 <header class="internal-topbar">
-<a href="<?= e(internal_start_path()) ?>" class="internal-topbar__brand">easyIT intern</a>
+<a href="<?= e(internal_start_path()) ?>" class="internal-topbar__brand"><img src="<?= e(app_path('/assets/img/brand-logo.svg')) ?>" alt="easyIT Nachhilfe" width="1536" height="1024"> <span>Mein Lernbereich</span></a>
 <div>
 <span><?= e((string)$user['display_name']) ?> · <?= e((string)$user['role_name']) ?></span>
 <a href="<?= e(app_path('/intern/logout.php')) ?>">Abmelden</a>

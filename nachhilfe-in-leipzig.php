@@ -69,8 +69,10 @@ $pageCanonical = $site['base_url'] . '/nachhilfe-in-leipzig.php';
             </section>
         </div>
 
-        <?php require __DIR__ . '/includes/footer.php'; ?>
+        
+
     </main>
 </div>
+<?php require __DIR__ . '/includes/footer.php'; ?>
 </body>
 </html>

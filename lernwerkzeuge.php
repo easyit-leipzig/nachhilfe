@@ -22,4 +22,6 @@ $pageSchemas = [[
 <?php foreach($tools as $tool): ?><a class="tool-card" href="/<?= e($tool['file']) ?>"><span class="tool-card__icon" aria-hidden="true"><?= e($tool['icon']) ?></span><strong><?= e($tool['name']) ?></strong><span><?= e($tool['summary']) ?></span></a><?php endforeach; ?>
 </div></section>
 <section class="section"><span class="eyebrow">Didaktischer Hinweis</span><h2>Ergebnis und Rechenweg gehören zusammen</h2><p>Ein Rechner kann ein Ergebnis kontrollieren. Für nachhaltiges Lernen sollte zusätzlich klar sein, welche Größen gegeben sind, welche Formel gilt und warum das Ergebnis plausibel ist.</p></section>
-</div><?php require __DIR__.'/includes/footer.php'; ?></main></div></body></html>
+</div>
+</main></div>
+<?php require __DIR__.'/includes/footer.php'; ?></body></html>

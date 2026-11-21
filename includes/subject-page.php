@@ -158,8 +158,10 @@ $pageSchemas = [
   <a class="button button--gold" href="/kontakt.php?fach=<?= rawurlencode($subject['name']) ?>">Unverbindlich anfragen</a>
 </section>
 </div>
-<?php require __DIR__ . '/footer.php'; ?>
+
+
 </main>
 </div>
+<?php require __DIR__ . '/footer.php'; ?>
 </body>
 </html>

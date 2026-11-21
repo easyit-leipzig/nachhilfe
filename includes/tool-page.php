@@ -87,9 +87,11 @@ $pageSchemas = [
   <a class="button button--gold" href="/kontakt.php">Nachhilfe anfragen</a>
 </section>
 </div>
-<?php require __DIR__ . '/footer.php'; ?>
+
+
 </main>
 </div>
+<?php require __DIR__ . '/footer.php'; ?>
 <script src="<?= e(asset_url('assets/js/tools.js')) ?>" defer></script>
 </body>
 </html>

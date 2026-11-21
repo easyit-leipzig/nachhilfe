@@ -80,4 +80,6 @@ $owner_name = implode(
 -->
 </section>
 
-</div><?php require __DIR__ . '/includes/footer.php'; ?></main></div></body></html>
+</div>
+</main></div>
+<?php require __DIR__ . '/includes/footer.php'; ?></body></html>

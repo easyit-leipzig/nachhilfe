@@ -94,8 +94,10 @@ $pageCanonical = $site['base_url'] . '/karriere.php';
   <p>Die Stellenprofile werden jetzt über die Datenbank geladen und können im geschützten Adminbereich einschließlich Bildserien, Anforderungen, Werte und FAQ gepflegt werden. Die Konfigurationsdatei bleibt als ausfallsichere Rückfallebene erhalten.</p>
 </section>
 </div>
-<?php require __DIR__ . '/includes/footer.php'; ?>
+
+
 </main>
 </div>
+<?php require __DIR__ . '/includes/footer.php'; ?>
 </body>
 </html>

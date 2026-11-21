@@ -30,9 +30,11 @@ $pageCanonical = $site['base_url'] . '/' . ($careerJob['slug'] ?? ('karriere-' .
 <nav class="breadcrumbs" aria-label="Brotkrumen"><a href="<?= e(app_path('/index.php')) ?>">Startseite</a><span>›</span><a href="<?= e(app_path('/karriere.php')) ?>">Karriere</a><span>›</span><span aria-current="page"><?= e($careerJob['code']) ?></span></nav>
 <?php require __DIR__ . '/includes/career-detail.php'; ?>
 </div>
-<?php require __DIR__ . '/includes/footer.php'; ?>
+
+
 </main>
 </div>
+<?php require __DIR__ . '/includes/footer.php'; ?>
 <script src="<?= e(app_path('/assets/js/career-gallery.js')) ?>" defer></script>
 </body>
 </html>

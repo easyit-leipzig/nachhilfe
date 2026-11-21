@@ -56,8 +56,10 @@ $pageSchemas = [
   <div><?= cms_content_html((string)$post['body']) ?></div>
 </article>
 </div>
-<?php require __DIR__ . '/includes/footer.php'; ?>
+
+
 </main>
 </div>
+<?php require __DIR__ . '/includes/footer.php'; ?>
 </body>
 </html>

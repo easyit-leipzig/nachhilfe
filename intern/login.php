@@ -45,6 +45,7 @@ $pageRobots = 'noindex,nofollow';
 <head>
 <?php require __DIR__ . '/../includes/meta.php'; ?>
 <link rel="stylesheet" href="<?= e(app_path('/assets/css/internal.css')) ?>">
+<link rel="stylesheet" href="<?= e(app_path('/assets/css/easyit-portal.css')) ?>">
 </head>
 <body class="internal-login-page">
 <main class="internal-login">
