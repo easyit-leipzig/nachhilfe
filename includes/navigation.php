@@ -2,6 +2,7 @@
 declare(strict_types=1);
 
 require_once __DIR__ . '/database.php';
+require_once __DIR__ . '/site-architecture.php';
 
 /**
  * Lädt die aktive Hauptnavigation ausschließlich aus der Datenbank.
@@ -10,10 +11,9 @@ require_once __DIR__ . '/database.php';
  */
 function horizontal_menu_items(): array
 {
-    if (!db_available()) {
-        error_log('Navigation konnte nicht geladen werden: Datenbank ist nicht verfügbar.');
-        return [];
-    }
+    // Ohne Datenbank bleibt die Website bedienbar. Die empfohlene Struktur
+    // wird beim ersten Aufruf auch dann gezeigt, wenn noch der alte DB-Seed gilt.
+    if (!db_available()) return website_recommended_navigation();
 
     try {
         $stmt = db()->query(
@@ -25,12 +25,25 @@ function horizontal_menu_items(): array
         $rows = $stmt->fetchAll(PDO::FETCH_ASSOC);
     } catch (Throwable $e) {
         error_log('Navigation konnte nicht aus der Datenbank geladen werden: ' . $e->getMessage());
-        return [];
+        return website_recommended_navigation();
     }
 
     if (!$rows) {
         error_log('Navigation konnte nicht geladen werden: navigation_items enthält keine aktiven Einträge.');
-        return [];
+        return website_recommended_navigation();
+    }
+
+    // Standardmenü des Altbestands enthielt 'Über' und 'Sonstiges'.
+    // Der moderne Aufbau wird sofort angezeigt; im Admin kann er dauerhaft
+    // in die Datenbank übernommen und danach frei bearbeitet werden.
+    $legacy = [];
+    foreach ($rows as $row) {
+        if ($row['parent_id'] === null || (int)$row['parent_id'] === 0) {
+            $legacy[] = trim((string)$row['title']);
+        }
+    }
+    if (in_array('Sonstiges', $legacy, true) && in_array('Über', $legacy, true)) {
+        return website_recommended_navigation();
     }
 
     // Zuerst alle aktiven IDs erfassen. Dadurch können auch ältere Bestände
@@ -92,14 +105,17 @@ function horizontal_menu_items(): array
         error_log('Navigation: Aktive Datensätze wurden gelesen, aber es konnte keine Hauptebene gebildet werden.');
     }
 
-    return $menu;
+    return $menu ?: website_recommended_navigation();
 }
 
 function horizontal_menu_active(array $item): bool
 {
     $current = basename((string)($_SERVER['SCRIPT_NAME'] ?? 'index.php'));
     $path = parse_url((string)$item['url'], PHP_URL_PATH);
-    if (is_string($path) && $path !== '' && $path !== '#' && basename($path) === $current) return true;
+    if (is_string($path) && $path !== '' && $path !== '#') {
+        $target = rtrim($path, '/') === '' ? 'index.php' : basename($path);
+        if ($target === $current) return true;
+    }
     foreach ($item['children'] ?? [] as $child) if (horizontal_menu_active($child)) return true;
     return false;
 }
@@ -145,7 +161,7 @@ function render_horizontal_menu(array $items, int $level = 1, string $idPrefix =
 
         if ($children) {
             $html .= '<div class="menu-entry">';
-            $html .= '<a class="menu-link" href="' . e($href) . '"' . ($active ? ' aria-current="page"' : '') . '><span>' . $title . '</span></a>';
+            $html .= '<a class="menu-link" href="' . e($href) . '"' . ($active && ($rawUrl === '/' || basename((string)parse_url($rawUrl, PHP_URL_PATH)) === basename((string)($_SERVER['SCRIPT_NAME'] ?? 'index.php'))) ? ' aria-current="page"' : '') . '><span>' . $title . '</span></a>';
             $html .= '<button class="submenu-button" type="button" aria-expanded="false" aria-controls="' . e($panelId) . '" aria-label="Untermenü ' . $title . ' öffnen"><span aria-hidden="true">▾</span></button>';
             $html .= '</div>';
             $html .= '<div id="' . e($panelId) . '" class="submenu-panel">';

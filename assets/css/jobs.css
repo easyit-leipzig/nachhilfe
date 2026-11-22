@@ -6,3 +6,35 @@
 @media(max-width:900px){.career-detail-hero{grid-template-columns:1fr}.career-detail-hero__media{min-height:420px}.career-value-strip{grid-template-columns:1fr}.career-gallery{grid-template-columns:repeat(2,minmax(0,1fr))}.career-gallery__item--wide{min-height:420px}.career-cta{align-items:flex-start;flex-direction:column}}
 @media(max-width:650px){.career-detail-hero__media{min-height:300px}.career-profile-grid,.career-steps,.career-gallery{grid-template-columns:1fr}.career-gallery__item--wide{grid-column:auto;grid-row:auto;min-height:300px}.career-gallery__item{min-height:300px}.career-lightbox{grid-template-columns:1fr;padding:4.5rem .8rem 1rem}.career-lightbox__nav{position:absolute;top:50%;width:44px;height:60px}.career-lightbox__nav--prev{left:.5rem}.career-lightbox__nav--next{right:.5rem}}
 @media(prefers-reduced-motion:reduce){.career-gallery__button img{transition:none}}
+
+/* easyIT-Farbwelt auch für die zuvor hellen Karriere-Sonderseiten. */
+.jobs-page{--jobs-blue:#5ae6f8;--jobs-dark:#f1faff;--jobs-gold:#ffd65a}
+.main-content .jobs-hero,.main-content .career-detail-hero{
+  color:#eaf6ff;background:linear-gradient(140deg,#103a60,#082849)!important;
+  border:1px solid rgba(77,197,239,.32);box-shadow:0 15px 32px rgba(0,5,22,.2);
+}
+.main-content .jobs-hero h1,.main-content .career-detail-hero__copy h1{color:#fff}
+.main-content .jobs-hero p,.main-content .career-detail-hero__copy p{color:#d1e5f2}
+.main-content .jobs-promise{background:linear-gradient(145deg,#086997,#0a3d67);border:1px solid rgba(108,229,255,.3)}
+.main-content .jobs-promise span{color:#f2faff}
+.main-content .jobs-value-grid article,.main-content .career-value-strip article,
+.main-content .career-profile-grid article,.main-content .career-steps li,
+.main-content .career-faq-list details,.main-content .job-details section{
+  color:#eaf7ff;background:linear-gradient(145deg,#104063,#092d4e);
+  border:1px solid rgba(72,192,234,.33);box-shadow:none;
+}
+.main-content .jobs-value-grid strong,.main-content .career-value-strip strong,
+.main-content .career-profile-grid h3,.main-content .job-details h4,
+.main-content .career-steps strong,.main-content .career-faq-list summary{color:#75eafd}
+.main-content .job-card{background:#0b3052!important;border:1px solid rgba(72,192,234,.33)!important}
+.main-content .job-gallery{background:#082645}
+.main-content .job-intro,.main-content .job-details p,.main-content .job-details li,
+.main-content .career-profile-grid li,.main-content .career-steps p,.main-content .career-faq-list p{color:#d4e5f0}
+.main-content .job-card__actions,.main-content .job-apply{
+  color:#fff;background:#104568;border-color:rgba(72,192,234,.3);
+}
+.main-content .job-apply:hover,.main-content .job-apply:focus-visible,
+.main-content .job-card__actions:hover{background:#11628a;color:#fff}
+.main-content .job-card__detail{color:#80eefd}
+.main-content .career-lead{color:#87eef9}
+.main-content .career-cta{background:linear-gradient(145deg,#0a507e,#0a3054)}

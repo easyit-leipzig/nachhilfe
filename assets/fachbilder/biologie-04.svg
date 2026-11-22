@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="720" viewBox="0 0 1200 720" role="img" aria-label="Biologie: Ökologie">
+  <defs>
+   <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#08284f"/><stop offset="1" stop-color="#0a1931"/></linearGradient>
+   <radialGradient id="shine"><stop stop-color="#185c83" stop-opacity=".6"/><stop offset="1" stop-color="#185c83" stop-opacity="0"/></radialGradient>
+  </defs>
+  <rect width="1200" height="720" fill="url(#bg)"/>
+  <circle cx="1049" cy="-10" r="382" fill="url(#shine)"/>
+  <path d="M0 650 H1200" stroke="#226c8d" stroke-width="2"/>
+  <text x="76" y="121" font-family="Arial,Helvetica,sans-serif" font-size="24" font-weight="700" fill="#37dce9" letter-spacing="2">BIOLOGIE · NACHHILFE LEIPZIG</text>
+  <rect x="72" y="156" width="74" height="7" rx="3" fill="#31d6e3"/>
+  <text x="76" y="335" font-family="Arial,Helvetica,sans-serif" font-size="42" font-weight="700" fill="#ffffff" >Ökologie</text>
+  <text x="76" y="515" font-family="Arial,Helvetica,sans-serif" font-size="23" font-weight="400" fill="#bedff2" >Lebensräume und Beziehungen</text>
+  <rect x="75" y="568" width="205" height="46" rx="23" fill="#103e62" stroke="#2b8daf"/>
+  <text x="102" y="598" font-family="Arial,Helvetica,sans-serif" font-size="20" font-weight="600" fill="#99eff6" >Verstehen · Üben</text>
+  <rect x="686" y="170" width="435" height="390" rx="28" fill="#0a355c" stroke="#1b6385" stroke-width="2"/><circle cx="796" cy="355" r="44" fill="#36d09b" stroke="none" stroke-width="0"/><text x="754" y="434" font-family="Arial,Helvetica,sans-serif" font-size="23" font-weight="600" fill="#e7f7ff" >Pflanze</text><circle cx="914" cy="355" r="44" fill="#53c5e5" stroke="none" stroke-width="0"/><text x="872" y="434" font-family="Arial,Helvetica,sans-serif" font-size="23" font-weight="600" fill="#e7f7ff" >Insekt</text><circle cx="1034" cy="355" r="44" fill="#f0c579" stroke="none" stroke-width="0"/><text x="992" y="434" font-family="Arial,Helvetica,sans-serif" font-size="23" font-weight="600" fill="#e7f7ff" >Vogel</text><line x1="834" y1="355" x2="856" y2="355" stroke="#fff" stroke-width="5" stroke-linecap="round" /><line x1="956" y1="355" x2="975" y2="355" stroke="#fff" stroke-width="5" stroke-linecap="round" /><polygon points="859,344 877,355 859,366" stroke="none" fill="#fff" stroke-width="0" stroke-linejoin="round"/><polygon points="978,344 996,355 978,366" stroke="none" fill="#fff" stroke-width="0" stroke-linejoin="round"/>
+  <text x="76" y="690" font-family="Arial,Helvetica,sans-serif" font-size="19" font-weight="500" fill="#6cb2cc" >04 / 04</text>
+  </svg>

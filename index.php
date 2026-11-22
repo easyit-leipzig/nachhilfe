@@ -13,6 +13,10 @@ $pageCanonical = canonical_url($site, '/');
 <?php require __DIR__ . '/includes/meta.php'; ?>
 <link rel="stylesheet" href="<?= e(app_path('/assets/css/home-reviews.css')) ?>">
 <link rel="stylesheet" href="<?= e(app_path('/assets/css/learning-images.css')) ?>">
+<link rel="stylesheet" href="<?= e(asset_url('assets/css/easyit-unified.css')) ?>?v=20261121b">
+<!-- easyIT-GLOBAL-DARK-DESIGN-v1:START -->
+<?php require_once __DIR__ . '/includes/easyit-theme-head.php'; ?>
+<!-- easyIT-GLOBAL-DARK-DESIGN-v1:END -->
 </head>
 <body>
 <?php require __DIR__ . '/includes/header.php'; ?>
@@ -25,22 +29,22 @@ $pageCanonical = canonical_url($site, '/');
 
 <?php render_index_content(1, 'before'); ?>
 <?php if (!index_content_has_replace(1)): ?>
-<section class="hero">
-  <div>
-    <span class="eyebrow">Individuelle Nachhilfe in Leipzig</span>
-    <h1>Verstehen statt auswendig lernen.</h1>
-    <p>easyIT unterstützt Schülerinnen, Schüler und Studierende in Mathematik, Physik, Chemie und Informatik – persönlich, strukturiert und mit Blick auf echte Fortschritte.</p>
+<section class="hero nh-home-hero">
+  <div class="nh-home-hero__copy">
+    <span class="eyebrow">easyIT Leipzig · Wissen verstehen</span>
+    <h1>Mathematik verstehen.<br><span class="nh-accent">Sicher lernen.</span></h1>
+    <p>Persönliche Nachhilfe für Schülerinnen, Schüler und Studierende in Leipzig. Wir erklären Zusammenhänge, schließen Wissenslücken und bereiten gezielt auf Klassenarbeiten, Abitur und Studium vor.</p>
     <div class="hero-actions">
-      <a class="button button--gold" href="<?= e(app_path('/kontakt.php')) ?>">Probestunde anfragen</a>
+      <a class="button button--gold" href="<?= e(app_path('/kontakt.php')) ?>">Nachhilfe anfragen</a>
       <a class="button button--blue" href="#faecher">Fächer entdecken</a>
     </div>
     <div class="stats" aria-label="Leistungsübersicht">
       <div class="stat"><strong>9</strong><span>Fachangebote</span></div>
-      <div class="stat"><strong>1:1</strong><span>persönliche Begleitung</span></div>
-      <div class="stat"><strong>Leipzig</strong><span>lokal & nah</span></div>
+      <div class="stat"><strong>1:1</strong><span>individuelle Förderung</span></div>
+      <div class="stat"><strong>Leipzig</strong><span>vor Ort</span></div>
     </div>
   </div>
-  <aside class="hero-panel hero-panel--visual hero-slider" aria-label="Einblicke in unsere Nachhilfe">
+  <aside class="hero-panel hero-panel--visual hero-slider nh-home-hero__media" aria-label="Einblicke in unsere Nachhilfe">
     <div class="hero-slider__stage">
       <figure class="hero-slider__slide is-active">
         <img src="<?= e(app_path('/assets/img/learning/nachhilfe-persoenlich-01.webp')) ?>" width="1024" height="1024" alt="Tutorin lernt gemeinsam mit einem Schüler" loading="eager" fetchpriority="high">

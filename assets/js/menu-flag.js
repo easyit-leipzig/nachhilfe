@@ -68,7 +68,25 @@
 
   const clonedNav = sourceNav.cloneNode(true);
   clonedNav.id = 'floating-main-navigation';
-  clonedNav.querySelectorAll('[id]').forEach((node) => node.removeAttribute('id'));
+  // Klon besitzt eigene eindeutige IDs: aria-controls bleibt gültig.
+  clonedNav.querySelectorAll('[id]').forEach((node) => {
+    const oldId = node.id;
+    node.id = 'floating-' + oldId;
+  });
+  clonedNav.querySelectorAll('[aria-controls]').forEach((node) => {
+    node.setAttribute('aria-controls', 'floating-' + node.getAttribute('aria-controls'));
+    node.setAttribute('aria-expanded', 'false');
+  });
+  clonedNav.querySelectorAll('.is-open').forEach((node) => node.classList.remove('is-open'));
+  clonedNav.addEventListener('click', (event) => {
+    const button = event.target.closest('.submenu-button');
+    if (!button) return;
+    const item = button.closest('.has-submenu');
+    if (!item) return;
+    const opening = button.getAttribute('aria-expanded') !== 'true';
+    item.classList.toggle('is-open', opening);
+    button.setAttribute('aria-expanded', String(opening));
+  });
   navWrap.appendChild(clonedNav);
 
   const backdrop = document.createElement('div');

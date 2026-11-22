@@ -11,6 +11,9 @@ $user = admin_user();
 <title><?= admin_e($adminTitle ?? 'Admin') ?> | easyIT</title>
 <link rel="stylesheet" href="<?= e(asset_url('assets/css/admin.css')) ?>">
 <link rel="stylesheet" href="<?= e(asset_url('assets/css/easyit-admin.css')) ?>">
+<!-- easyIT-GLOBAL-DARK-DESIGN-v1:START -->
+<?php require_once __DIR__ . '/../../includes/easyit-theme-head.php'; ?>
+<!-- easyIT-GLOBAL-DARK-DESIGN-v1:END -->
 </head>
 <body class="admin-body">
 <header class="admin-header">

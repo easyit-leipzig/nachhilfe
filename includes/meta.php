@@ -49,7 +49,7 @@ if ($isIndexable) {
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <meta name="theme-color" content="#071b34">
-<meta name="color-scheme" content="light">
+<meta name="color-scheme" content="dark">
 <meta name="robots" content="<?= e($pageRobots) ?>">
 <meta name="author" content="<?= e((string)$site['owner']) ?>">
 <title><?= e($pageTitle) ?></title>
@@ -85,6 +85,7 @@ if ($isIndexable) {
 <link rel="stylesheet" href="<?= e(asset_url('assets/css/footer.css')) ?>">
 <link rel="stylesheet" href="<?= e(asset_url('assets/css/homepage_blocks.css')) ?>">
 <link rel="stylesheet" href="<?= e(asset_url('assets/css/easyit-theme.css')) ?>">
+<link rel="stylesheet" href="<?= e(asset_url('assets/css/easyit-unified.css')) ?>?v=20261121d">
 <?php if ($isIndexable): ?>
 <script type="application/ld+json" nonce="<?= e(security_csp_nonce()) ?>">
 <?= json_encode(organization_schema($site), JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE | JSON_PRETTY_PRINT) ?>

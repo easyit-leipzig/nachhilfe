@@ -2,6 +2,7 @@
 declare(strict_types=1);
 
 return [
+    'assets/css/easyit-unified.css' => 'assets/css/easyit-unified.css',
     'assets/css/easyit-theme.css' => 'assets/css/easyit-theme.css',
     'assets/css/admin.css' => 'assets/css/admin.1f369169bc7c.css',
     'assets/css/content.css' => 'assets/css/content.701997f4d583.css',
@@ -14,7 +15,7 @@ return [
     'assets/js/analytics.js' => 'assets/js/analytics.0e6e1f676f76.js',
     'assets/js/app.js' => 'assets/js/app.8f5604aebdb8.js',
     'assets/js/consent.js' => 'assets/js/consent.dad087c6f600.js',
-    'assets/js/menu-flag.js' => 'assets/js/menu-flag.45ca1b10b70c.js',
+    'assets/js/menu-flag.js' => 'assets/js/menu-flag.9d965fb96f26.js',
     'assets/js/search-index.js' => 'assets/js/search-index.a26452426224.js',
     'assets/js/search.js' => 'assets/js/search.f92813eb6a1d.js',
     'assets/js/tools.js' => 'assets/js/tools.5373f9d6674f.js',

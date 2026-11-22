@@ -1,0 +1,12 @@
+<?php
+declare(strict_types=1);
+$root = __DIR__ . '/assets/fachbilder/';
+$manifest = json_decode((string)file_get_contents($root . 'fachbilder.json'), true);
+$fach = isset($_GET['fach']) && is_string($_GET['fach']) && isset($manifest[$_GET['fach']]) ? $_GET['fach'] : 'mathematik';
+$bilder = $manifest[$fach]['bilder'];
+$cnt = count(glob($root.'*.svg') ?: []);
+function e(string $s): string { return htmlspecialchars($s, ENT_QUOTES | ENT_SUBSTITUTE, 'UTF-8'); }
+?><!doctype html><html lang="de"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>easyIT Fachbilder prüfen</title><link rel="stylesheet" href="assets/fachbilder/fachbilder.css"><style>body{background:#031730;color:#effaff;font:16px Arial,sans-serif;margin:0;padding:24px}.check{max-width:1050px;margin:auto}a{color:#48dbea}nav a{margin:0 8px 8px 0;display:inline-block}.ok{color:#9bedad}.bad{color:#ffaaaa}</style><!-- easyIT-GLOBAL-DARK-DESIGN-v1:START -->
+<?php require_once __DIR__ . '/includes/easyit-theme-head.php'; ?>
+<!-- easyIT-GLOBAL-DARK-DESIGN-v1:END -->
+</head><body><div class="check"><h1>Fachbilder – Funktionstest</h1><p>Gefundene lokale Bilder: <strong class="<?= $cnt===52?'ok':'bad' ?>"><?= $cnt ?> / 52</strong>. Ordner: <code>assets/fachbilder/</code></p><nav><?php foreach($manifest as $code=>$item):?><a href="?fach=<?= e($code) ?>"><?= e($item['name']) ?></a><?php endforeach ?></nav><section class="easyit-fachbilder"><div class="easyit-fachbilder__intro"><p class="easyit-fachbilder__eyebrow">Bildtest</p><h2><?=e($manifest[$fach]['name'])?></h2><p>Wenn diese vier Bilder sichtbar sind, sind die lokalen Dateien erreichbar.</p></div><div class="easyit-fachbilder__grid"><?php foreach($bilder as $b):?><figure class="easyit-fachbilder__card"><img src="assets/fachbilder/<?=e($b['datei'])?>" alt="<?=e($b['titel'])?>" width="1200" height="720"><figcaption><strong><?=e($b['titel'])?></strong><span><?=e($b['beschreibung'])?></span></figcaption></figure><?php endforeach ?></div></section></div></body></html>

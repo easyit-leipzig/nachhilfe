@@ -1,0 +1,127 @@
+/* easyIT Nachhilfe: Website-weite Kontrast-/Dunkelblau-Korrektur
+   Version 1.0.0. Wird nach den vorhandenen Stylesheets eingebunden.
+   Keine Änderungen an Bildern, Logos, Charts oder primären Aktionsbuttons. */
+:root {
+  --easyit-dark-card: #103756;
+  --easyit-dark-card-deep: #0a2a49;
+  --easyit-dark-field: #0b2c4d;
+  --easyit-dark-border: #2c7198;
+  --easyit-dark-border-focus: #24cee5;
+  --easyit-dark-text: #eff8ff;
+  --easyit-dark-muted: #b9d7ec;
+}
+
+/* Formulare aller Seiten: Keine weißen Felder, helle und lesbare Schrift. */
+:where(input:not([type="hidden"]):not([type="checkbox"]):not([type="radio"]):not([type="range"]):not([type="color"]):not([type="image"]):not([type="button"]):not([type="submit"]):not([type="reset"]):not([type="file"]), textarea, select) {
+  background: var(--easyit-dark-field) !important;
+  background-color: var(--easyit-dark-field) !important;
+  color: var(--easyit-dark-text) !important;
+  -webkit-text-fill-color: var(--easyit-dark-text) !important;
+  border: 1px solid var(--easyit-dark-border) !important;
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, .12) !important;
+  caret-color: #51e4f1;
+  color-scheme: dark;
+}
+:where(input:not([type="checkbox"]):not([type="radio"]):not([type="range"]):not([type="color"]):not([type="image"]):not([type="button"]):not([type="submit"]):not([type="reset"]), textarea)::placeholder {
+  color: #a5c8de !important;
+  -webkit-text-fill-color: #a5c8de !important;
+  opacity: 1;
+}
+:where(input:not([type="hidden"]):not([type="checkbox"]):not([type="radio"]):not([type="range"]):not([type="color"]):not([type="image"]):not([type="button"]):not([type="submit"]):not([type="reset"]):not([type="file"]), textarea, select):focus {
+  outline: 2px solid rgba(36, 206, 229, .78) !important;
+  outline-offset: 1px;
+  border-color: var(--easyit-dark-border-focus) !important;
+  background-color: #0d3456 !important;
+}
+:where(input, textarea, select):-webkit-autofill,
+:where(input, textarea, select):-webkit-autofill:hover,
+:where(input, textarea, select):-webkit-autofill:focus {
+  -webkit-box-shadow: 0 0 0 1000px #0b2c4d inset !important;
+  -webkit-text-fill-color: #eff8ff !important;
+  caret-color: #eff8ff !important;
+}
+:where(select, option, optgroup) { color-scheme: dark; }
+:where(option, optgroup) { background: #0b2c4d !important; color: #eff8ff !important; }
+:where(input[type="checkbox"], input[type="radio"]) { accent-color: #14c9dc; }
+
+/* Dateiuploads: auch die Systemschaltfläche dunkel halten. */
+input[type="file"] {
+  background-color: #0b2c4d !important;
+  color: #eff8ff !important;
+  border-color: #2c7198 !important;
+  color-scheme: dark;
+}
+input[type="file"]::file-selector-button {
+  background-color: #134a6c;
+  border: 1px solid #2c7198;
+  color: #eff8ff;
+  border-radius: 6px;
+  margin-inline-end: 12px;
+  padding: 8px 12px;
+}
+
+/* Beschriftungen und Hilfetexte in Formularen. */
+:where(main, [role="main"], .page-main, .site-main, .main-content, .content, .content-area, form) :where(label, legend, .form-label, .field-label, .input-label) {
+  color: #e0f1ff !important;
+}
+:where(main, [role="main"], .page-main, .site-main, .main-content, .content, .content-area, form) :where(.form-help, .field-help, .form-hint, .input-hint) {
+  color: #b9d7ec !important;
+}
+
+/* Erkannte weiße Karten/Boxen; Klasse wird nur bei tatsächlich hellem
+   Hintergrund gesetzt, dadurch bleiben bereits passende Komponenten intakt. */
+.easyit-dark-surface {
+  background: linear-gradient(155deg, var(--easyit-dark-card) 0%, var(--easyit-dark-card-deep) 100%) !important;
+  background-color: var(--easyit-dark-card) !important;
+  background-image: linear-gradient(155deg, var(--easyit-dark-card) 0%, var(--easyit-dark-card-deep) 100%) !important;
+  color: var(--easyit-dark-text) !important;
+  border-color: var(--easyit-dark-border) !important;
+  box-shadow: 0 12px 30px rgba(0, 13, 35, .18) !important;
+  color-scheme: dark;
+}
+.easyit-dark-surface :where(h1, h2, h3, h4, h5, h6, strong, b, legend, dt) {
+  color: #f4fbff !important;
+}
+.easyit-dark-surface :where(p, small, label, li, dd, figcaption, .description, .subtext, .hint, .muted, .text-muted) {
+  color: var(--easyit-dark-muted) !important;
+}
+.easyit-dark-surface :where(a:not([class*="btn"]):not([role="button"])) {
+  color: #52dfea !important;
+}
+.easyit-dark-surface :where(th, td) {
+  background-color: transparent !important;
+  color: var(--easyit-dark-text) !important;
+  border-color: var(--easyit-dark-border) !important;
+}
+/* Häufig direkt dunkel gesetzte Texte innerhalb einer aufgehellten Karte. */
+.easyit-dark-contrast-text {
+  color: var(--easyit-dark-text) !important;
+  -webkit-text-fill-color: var(--easyit-dark-text) !important;
+}
+
+/* Helle Schaltflächen erhalten ein dunkles, kontrastreiches Design. */
+.easyit-dark-light-button {
+  background: #164866 !important;
+  background-color: #164866 !important;
+  color: #f4fbff !important;
+  -webkit-text-fill-color: #f4fbff !important;
+  border: 1px solid #2c7198 !important;
+  box-shadow: none !important;
+}
+.easyit-dark-light-button:hover,
+.easyit-dark-light-button:focus-visible { background: #1b5c81 !important; }
+
+/* Versehentlich helle Buttons zum Entfernen von Notenzeilen. */
+:where(button, input[type="button"], input[type="reset"]):is(.easyit-dark-danger, .remove-note, .remove-row, .delete-row, .btn-danger, .button-danger, .remove-btn, [aria-label*="Entfernen"], [aria-label*="Löschen"]) {
+  background: #542a3c !important;
+  border: 1px solid #a85267 !important;
+  color: #ffe4eb !important;
+  -webkit-text-fill-color: #ffe4eb !important;
+}
+:where(button, input[type="button"], input[type="reset"]):is(.easyit-dark-danger, .remove-note, .remove-row, .delete-row, .btn-danger, .button-danger, .remove-btn, [aria-label*="Entfernen"], [aria-label*="Löschen"]):hover {
+  background: #713249 !important;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .easyit-dark-surface { transition: none !important; }
+}

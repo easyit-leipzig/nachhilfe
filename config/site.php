@@ -42,7 +42,15 @@ try {
         if (preg_match('~^(/[^/]+)(?:/|$)~', $scriptName, $match) === 1) {
             $detectedBasePath = $match[1];
         }
-        $site['base_path'] = $detectedBasePath !== '' ? $detectedBasePath : '/nh_hor';
+        $site['base_path'] = $detectedBasePath;
+        // SEO metadata in local previews follows the actual installation path.
+        // Only use a fixed localhost URL here, never an untrusted Host header.
+        $localHost = strtolower((string)($_SERVER['HTTP_HOST'] ?? 'localhost'));
+        $localHost = (string)preg_replace('/:\d+$/', '', $localHost);
+        if (in_array($localHost, ['localhost','127.0.0.1'], true)) {
+            $site['base_url'] = 'http://' . $localHost . $detectedBasePath;
+        }
+
     }
 
     $site['phone'] = config_env('SITE_PHONE', (string)$site['phone']) ?? '';

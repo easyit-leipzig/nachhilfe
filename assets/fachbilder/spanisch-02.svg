@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="720" viewBox="0 0 1200 720" role="img" aria-label="Spanisch: Hablar">
+  <defs>
+   <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#08284f"/><stop offset="1" stop-color="#0a1931"/></linearGradient>
+   <radialGradient id="shine"><stop stop-color="#185c83" stop-opacity=".6"/><stop offset="1" stop-color="#185c83" stop-opacity="0"/></radialGradient>
+  </defs>
+  <rect width="1200" height="720" fill="url(#bg)"/>
+  <circle cx="1049" cy="-10" r="382" fill="url(#shine)"/>
+  <path d="M0 650 H1200" stroke="#226c8d" stroke-width="2"/>
+  <text x="76" y="121" font-family="Arial,Helvetica,sans-serif" font-size="24" font-weight="700" fill="#37dce9" letter-spacing="2">SPANISCH · NACHHILFE LEIPZIG</text>
+  <rect x="72" y="156" width="74" height="7" rx="3" fill="#31d6e3"/>
+  <text x="76" y="335" font-family="Arial,Helvetica,sans-serif" font-size="42" font-weight="700" fill="#ffffff" >Hablar</text>
+  <text x="76" y="515" font-family="Arial,Helvetica,sans-serif" font-size="23" font-weight="400" fill="#bedff2" >Sprechen und reagieren</text>
+  <rect x="75" y="568" width="205" height="46" rx="23" fill="#103e62" stroke="#2b8daf"/>
+  <text x="102" y="598" font-family="Arial,Helvetica,sans-serif" font-size="20" font-weight="600" fill="#99eff6" >Verstehen · Üben</text>
+  <rect x="686" y="170" width="435" height="390" rx="28" fill="#0a355c" stroke="#1b6385" stroke-width="2"/><rect x="730" y="248" width="243" height="136" rx="28" fill="#1586a5" stroke="none" stroke-width="1"/><path d="M807 380 L786 417 L846 381" stroke="none" stroke-width="5" fill="#1586a5" stroke-linecap="round" stroke-linejoin="round" /><text x="775" y="326" font-family="Arial,Helvetica,sans-serif" font-size="38" font-weight="700" fill="#ffffff" >¡Hola!</text><rect x="860" y="402" width="231" height="111" rx="27" fill="#246690" stroke="none" stroke-width="1"/><text x="892" y="469" font-family="Arial,Helvetica,sans-serif" font-size="28" font-weight="700" fill="#efffff" >¡Buenos días!</text><path d="M994 512 L1021 536 L1024 510" stroke="none" stroke-width="5" fill="#246690" stroke-linecap="round" stroke-linejoin="round" />
+  <text x="76" y="690" font-family="Arial,Helvetica,sans-serif" font-size="19" font-weight="500" fill="#6cb2cc" >02 / 04</text>
+  </svg>

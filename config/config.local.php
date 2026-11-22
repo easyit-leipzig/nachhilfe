@@ -5,8 +5,8 @@ declare(strict_types=1);
 return [
     'app' => [
         'name' => 'Nachhilfe Multi-Domain',
-        'base_url' => 'http://localhost/nh_hor',
-        'base_path' => '/nh_hor',
+        'base_url' => 'http://localhost/nachhilfe',
+        'base_path' => '',
         'debug' => true,
         'timezone' => 'Europe/Berlin',
     ],
@@ -45,7 +45,7 @@ return [
     'database' => [
         'host' => '127.0.0.1',
         'port' => 3306,
-        'name' => 'easyit',
+        'name' => 'easyit_homepage',
         'username' => 'root',
         'password' => '',
         'charset' => 'utf8mb4',

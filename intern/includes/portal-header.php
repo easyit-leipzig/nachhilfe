@@ -50,6 +50,9 @@ $items = $menus[$role] ?? [];
 <title><?= e($portalTitle ?? 'Interner Bereich') ?> | easyIT</title>
 <link rel="stylesheet" href="<?= e(app_path('/assets/css/internal.css')) ?>">
 <link rel="stylesheet" href="<?= e(app_path('/assets/css/easyit-portal.css')) ?>">
+<!-- easyIT-GLOBAL-DARK-DESIGN-v1:START -->
+<?php require_once __DIR__ . '/../../includes/easyit-theme-head.php'; ?>
+<!-- easyIT-GLOBAL-DARK-DESIGN-v1:END -->
 </head>
 <body class="internal-portal">
 <header class="internal-topbar">

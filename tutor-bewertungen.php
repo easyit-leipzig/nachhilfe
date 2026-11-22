@@ -47,7 +47,10 @@ $mainHeading = $tutor ? 'Bewertungen für ' . (string)$tutor['display_name'] : '
 <html lang="de">
 <head>
 <?php require __DIR__ . '/includes/meta.php'; ?>
-<link rel="stylesheet" href="<?= e(app_path('/assets/css/tutor-thiele.css')) ?>">
+<link rel="stylesheet" href="<?= e(app_path('/assets/css/tutor-thiele.css?v=20261121c')) ?>">
+<!-- easyIT-GLOBAL-DARK-DESIGN-v1:START -->
+<?php require_once __DIR__ . '/includes/easyit-theme-head.php'; ?>
+<!-- easyIT-GLOBAL-DARK-DESIGN-v1:END -->
 </head>
 <body>
 <?php require __DIR__ . '/includes/header.php'; ?>

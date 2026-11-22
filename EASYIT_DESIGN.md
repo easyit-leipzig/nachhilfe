@@ -14,3 +14,9 @@ Die öffentliche Webseite verwendet ab diesem Stand ein einheitliches easyIT-Lay
 Die Gestaltung wurde anhand der bekannten easyIT-Farbwelt und des im Nachhilfe-Paket enthaltenen Logos umgesetzt. Das Original-CSS der separaten easyIT-Firmenwebseite lag diesem ZIP nicht bei, daher handelt es sich um eine konsistente Nachbildung, keinen bytegleichen Import.
 
 Die PHP-Syntax wurde geprüft. Für einen endgültigen Freigabetest bitte Navigation und Formularversand mit der produktiven Datenbank sowie die Ansichten auf Handy/Desktop prüfen. Zugangsdaten in `config` wurden nicht geändert.
+
+## Überarbeitung: Header- und Menüführung
+
+Die Firmen-DNA wird bewusst übernommen: großzügiges Logo, dunkelblauer Hauptheader, türkise Akzentfarbe, Suche, Anmeldung und Kontakt, Dropdownleiste, Navy-Karten, volle Footerbreite. Die Inhalte werden eigenständig auf Nachhilfe angepasst. Unter dem Seitentitel steht als echtes HTML `Nachhilfe in Leipzig` und `Naturwissenschaften · Sprachen · Soziales`.
+
+Die originale separate Unternehmensseite samt ihrer CSS-/PHP-Quelldateien war in diesem Projektarchiv nicht enthalten. Deshalb ist dies eine visuelle Umsetzung des bisher festgelegten Corporate Designs, kein 1:1-Kopieren unbekannter Original-Assets.

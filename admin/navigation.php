@@ -8,6 +8,7 @@ if (!admin_has_role('admin')) {
     exit('Keine Berechtigung für die Menüverwaltung.');
 }
 
+require_once __DIR__ . '/../includes/navigation.php';
 $error = '';
 $notice = (string)($_GET['result'] ?? '');
 $editId = filter_input(INPUT_GET, 'edit', FILTER_VALIDATE_INT, ['options' => ['min_range' => 1]]) ?: null;
@@ -23,6 +24,38 @@ if (strtoupper((string)($_SERVER['REQUEST_METHOD'] ?? 'GET')) === 'POST') {
         try {
             $action = (string)($_POST['action'] ?? 'save');
             $id = filter_var($_POST['id'] ?? null, FILTER_VALIDATE_INT, ['options' => ['min_range' => 1]]) ?: null;
+            if ($action === 'install_recommended') {
+                // Sicherheitskopie des alten DB-Menüs; nur bewusst durch Admin gestartet.
+                $pdo = db();
+                $pdo->exec('CREATE TABLE IF NOT EXISTS navigation_items_backup_20261121 LIKE navigation_items');
+                $pdo->exec('INSERT IGNORE INTO navigation_items_backup_20261121 SELECT * FROM navigation_items');
+                $pdo->beginTransaction();
+                try {
+                    // Selbstreferenzierte Kinder durch ON DELETE CASCADE mitentfernen.
+                    $pdo->exec('DELETE FROM navigation_items');
+                    $insert = $pdo->prepare('INSERT INTO navigation_items (parent_id,title,url,sort_order,is_active) VALUES (:parent_id,:title,:url,:sort_order,1)');
+                    $writeItems = static function (array $menu, ?int $parentId) use (&$writeItems, $pdo, $insert): void {
+                        foreach ($menu as $index => $item) {
+                            $insert->execute([
+                                'parent_id' => $parentId,
+                                'title' => (string)$item['title'],
+                                'url' => (string)$item['url'],
+                                'sort_order' => ($index + 1) * 10,
+                            ]);
+                            $id = (int)$pdo->lastInsertId();
+                            if (!empty($item['children'])) $writeItems($item['children'], $id);
+                        }
+                    };
+                    $writeItems(website_recommended_navigation(), null);
+                    $pdo->commit();
+                    admin_log('update', 'navigation', 0);
+                } catch (Throwable $exception) {
+                    if ($pdo->inTransaction()) $pdo->rollBack();
+                    throw $exception;
+                }
+                header('Location: ' . app_path('/admin/navigation.php?result=recommended'), true, 303);
+                exit;
+            }
             if ($action === 'delete') {
                 if (!$id) throw new RuntimeException('Ungültiger Menüeintrag.');
                 $stmt = db()->prepare('DELETE FROM navigation_items WHERE id = :id');
@@ -87,6 +120,17 @@ $adminTitle = 'Navigation';
 require __DIR__ . '/includes/header.php';
 ?>
 <h1>Navigation</h1>
+<section class="admin-card" style="margin-bottom:1.5rem">
+<h2>Empfohlene Website-Navigation</h2>
+<p>Die neue Sitemap wird aus den vorhandenen Seiten erzeugt. Für die Hauptnavigation empfehlen wir: Startseite · Fächer · Lernstufen · Leipzig · Preise &amp; Ablauf · Lernhilfen · Über uns · Kontakt.</p>
+<p>Solange in der Datenbank das alte Standardmenü mit „Über“ und „Sonstiges“ steht, zeigt die Website bereits die neue Struktur. Mit dem folgenden Knopf wird sie dauerhaft in der Menüverwaltung gespeichert und kann anschließend einzeln bearbeitet werden.</p>
+<form method="post" action="<?= admin_e(app_path('/admin/navigation.php')) ?>" onsubmit="return confirm('Neues Menü in die Datenbank übernehmen? Die bisherigen Einträge werden zuvor gesichert.');">
+<input type="hidden" name="csrf_token" value="<?= admin_e(csrf_token()) ?>">
+<input type="hidden" name="action" value="install_recommended">
+<button class="admin-btn admin-btn--gold" type="submit">Empfohlenes Menü in Datenbank übernehmen</button>
+</form>
+</section>
+<?php if ($notice === 'recommended'): ?><p class="admin-notice admin-notice--success">Die neue Navigationsstruktur wurde in der Datenbank gespeichert. Die vorherige Struktur liegt in navigation_items_backup_20261121.</p><?php endif; ?>
 <?php if ($notice === 'saved'): ?><p class="admin-notice admin-notice--success">Menüeintrag gespeichert.</p><?php endif; ?>
 <?php if ($notice === 'deleted'): ?><p class="admin-notice admin-notice--success">Menüeintrag einschließlich seiner Unterpunkte gelöscht.</p><?php endif; ?>
 <?php if ($error !== ''): ?><p class="admin-notice admin-notice--error"><?= admin_e($error) ?></p><?php endif; ?>

@@ -94,3 +94,17 @@
         font-weight: 700;
     }
 }
+
+/* Öffentliche Bildnachweise: dieselben Navy-Karten wie die übrige Website. */
+.main-content .image-credits-table-wrap{background:#0a2e50;border-color:rgba(72,190,234,.35)}
+.main-content .image-credits-table{color:#e4f5ff}
+.main-content .image-credits-table th{background:#104269;color:#fff}
+.main-content .image-credits-table th,.main-content .image-credits-table td{border-bottom-color:rgba(76,199,239,.23)}
+.main-content .image-credits-table tbody tr:nth-child(even){background:rgba(61,142,185,.09)}
+.main-content .image-credits-table small{color:#c4d9e6}
+.main-content .image-credits-table a{color:#72ecfc}
+@media(max-width:760px){
+  .main-content .image-credits-table-wrap{background:transparent;border:0}
+  .main-content .image-credits-table tr{background:#0b3457;border-color:rgba(72,190,234,.35)}
+  .main-content .image-credits-table td::before{color:#76edfa}
+}

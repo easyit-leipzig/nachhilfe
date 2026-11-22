@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="720" viewBox="0 0 1200 720" role="img" aria-label="Biologie: Pflanzenbiologie">
+  <defs>
+   <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#08284f"/><stop offset="1" stop-color="#0a1931"/></linearGradient>
+   <radialGradient id="shine"><stop stop-color="#185c83" stop-opacity=".6"/><stop offset="1" stop-color="#185c83" stop-opacity="0"/></radialGradient>
+  </defs>
+  <rect width="1200" height="720" fill="url(#bg)"/>
+  <circle cx="1049" cy="-10" r="382" fill="url(#shine)"/>
+  <path d="M0 650 H1200" stroke="#226c8d" stroke-width="2"/>
+  <text x="76" y="121" font-family="Arial,Helvetica,sans-serif" font-size="24" font-weight="700" fill="#37dce9" letter-spacing="2">BIOLOGIE · NACHHILFE LEIPZIG</text>
+  <rect x="72" y="156" width="74" height="7" rx="3" fill="#31d6e3"/>
+  <text x="76" y="335" font-family="Arial,Helvetica,sans-serif" font-size="42" font-weight="700" fill="#ffffff" >Pflanzenbiologie</text>
+  <text x="76" y="515" font-family="Arial,Helvetica,sans-serif" font-size="23" font-weight="400" fill="#bedff2" >Licht, Wachstum und Energie</text>
+  <rect x="75" y="568" width="205" height="46" rx="23" fill="#103e62" stroke="#2b8daf"/>
+  <text x="102" y="598" font-family="Arial,Helvetica,sans-serif" font-size="20" font-weight="600" fill="#99eff6" >Verstehen · Üben</text>
+  <rect x="686" y="170" width="435" height="390" rx="28" fill="#0a355c" stroke="#1b6385" stroke-width="2"/><line x1="908" y1="490" x2="909" y2="299" stroke="#5fe5a6" stroke-width="11" stroke-linecap="round" /><ellipse cx="846" cy="390" rx="65" ry="27" fill="#3ad58e" transform="rotate(-35,846,390)"/><ellipse cx="965" cy="355" rx="65" ry="27" fill="#3ad58e" transform="rotate(40,965,355)"/><ellipse cx="850" cy="315" rx="65" ry="27" fill="#3ad58e" transform="rotate(-45,850,315)"/><ellipse cx="963" cy="420" rx="65" ry="27" fill="#3ad58e" transform="rotate(50,963,420)"/><circle cx="785" cy="266" r="37" fill="#f7cb65" stroke="none" stroke-width="0"/><line x1="835.0" y1="266.0" x2="851.0" y2="266.0" stroke="#f7cb65" stroke-width="4" stroke-linecap="round" /><line x1="820.3553390593274" y1="301.3553390593274" x2="831.6690475583122" y2="312.6690475583121" stroke="#f7cb65" stroke-width="4" stroke-linecap="round" /><line x1="785.0" y1="316.0" x2="785.0" y2="332.0" stroke="#f7cb65" stroke-width="4" stroke-linecap="round" /><line x1="749.6446609406727" y1="301.3553390593274" x2="738.3309524416878" y2="312.6690475583121" stroke="#f7cb65" stroke-width="4" stroke-linecap="round" /><line x1="735.0" y1="266.0" x2="719.0" y2="266.0" stroke="#f7cb65" stroke-width="4" stroke-linecap="round" /><line x1="749.6446609406726" y1="230.64466094067262" x2="738.3309524416878" y2="219.33095244168788" stroke="#f7cb65" stroke-width="4" stroke-linecap="round" /><line x1="785.0" y1="216.0" x2="785.0" y2="200.0" stroke="#f7cb65" stroke-width="4" stroke-linecap="round" /><line x1="820.3553390593273" y1="230.64466094067262" x2="831.6690475583122" y2="219.33095244168786" stroke="#f7cb65" stroke-width="4" stroke-linecap="round" /><rect x="818" y="488" width="178" height="15" rx="5" fill="#3c856d" stroke="none" stroke-width="1"/>
+  <text x="76" y="690" font-family="Arial,Helvetica,sans-serif" font-size="19" font-weight="500" fill="#6cb2cc" >03 / 04</text>
+  </svg>

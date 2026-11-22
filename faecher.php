@@ -5,7 +5,10 @@ $site=require __DIR__.'/config/site.php';
 $pageTitle='Nachhilfe-Fächer in Leipzig | easyIT';
 $pageDescription='Nachhilfe in Leipzig für Mathematik, Physik, Chemie, Informatik, Deutsch, Englisch, Französisch, Spanisch, Latein und Ethik.';
 $pageCanonical=$site['base_url'].'/faecher.php';
-?><!doctype html><html lang="de"><head><?php require __DIR__.'/includes/meta.php'; ?></head><body>
+?><!doctype html><html lang="de"><head><?php require __DIR__.'/includes/meta.php'; ?><!-- easyIT-GLOBAL-DARK-DESIGN-v1:START -->
+<?php require_once __DIR__ . '/includes/easyit-theme-head.php'; ?>
+<!-- easyIT-GLOBAL-DARK-DESIGN-v1:END -->
+</head><body>
 <?php require __DIR__.'/includes/header.php'; ?><div class="page-shell"><?php require __DIR__.'/includes/sidebar.php'; ?>
 <main class="main-content" id="hauptinhalt"><div class="content-wrap">
 <nav class="breadcrumbs" aria-label="Brotkrumen"><a href="index.php">Startseite</a><span>›</span><span aria-current="page">Fächer</span></nav>

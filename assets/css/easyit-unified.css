@@ -1,0 +1,294 @@
+/* easyIT Nachhilfe – einheitliches Corporate Layout, abgeleitet von der
+   mitgelieferten easyIT Leipzig Homepage (styles.css / includes/header.php).
+   Diese Datei überschreibt nur die Gestaltung, nicht PHP oder CMS-Funktionen. */
+:root {
+  color-scheme:dark;
+  --ink:#f6fbff;
+  --muted:#bed8ea;
+  --navy:#02112a;
+  --deep:#031b39;
+  --blue:#067aaf;
+  --blue-dark:#052345;
+  --blue-light:#0a4e84;
+  --panel:#06294d;
+  --surface:#082a4d;
+  --surface-soft:#103b60;
+  --text:#f4faff;
+  --line:rgba(46,185,232,.32);
+  --cyan:#02def2;
+  --aqua:#53f1ff;
+  --gold:#18dbef;
+  --shadow:0 16px 43px rgba(0,4,18,.27);
+  --content-max:1390px;
+  --radius:16px;
+}
+html{scroll-padding-top:145px;}
+body{
+  margin:0;
+  color:#f6fbff;
+  background:
+    radial-gradient(ellipse 80% 540px at 52% -140px,rgba(7,81,144,.8),transparent 72%),
+    radial-gradient(ellipse 70% 550px at 98% 35%,rgba(2,91,156,.18),transparent 75%),
+    linear-gradient(145deg,#031633 0%,#02152f 60%,#051e3e 100%) !important;
+  font:400 16px/1.62 'Segoe UI',Inter,Arial,sans-serif;
+}
+body,button,input,select,textarea{font-family:'Segoe UI',Inter,Arial,sans-serif}
+body a{transition:color .18s,background-color .18s,border-color .18s;}
+body .skip-link{background:#53f1ff;color:#02152e;}
+body :focus-visible{outline:3px solid #53f1ff;outline-offset:3px;}
+/* HEADER: no floating white strip, all controls on the same visual axis. */
+.site-header.nh-site-header {
+  position:sticky;top:0;z-index:1200;padding:0!important;
+  background:rgba(2,18,42,.96)!important;
+  border-top:0;
+  border-bottom:1px solid rgba(37,206,255,.44);
+  box-shadow:0 8px 30px rgba(0,12,35,.45);
+  backdrop-filter:blur(15px);
+}
+.site-header.nh-site-header::after{content:'';position:absolute;left:34%;right:34%;bottom:-2px;height:2px;background:linear-gradient(90deg,transparent,#48eaff,transparent);pointer-events:none;}
+.nh-site-header .nh-header__bar {background:linear-gradient(102deg,#03142e,#042647 65%,#041934);}
+.nh-site-header .nh-header__inner {
+  width:min(100%,1530px);min-height:95px;margin-inline:auto;
+  padding:10px clamp(18px,3.5vw,55px);
+  display:flex;align-items:center;gap:clamp(12px,2vw,30px);
+}
+.nh-site-header .nh-header__brand{display:block;flex:0 0 auto;width:180px;line-height:0;}
+.nh-site-header .nh-header__brand img{display:block;width:180px;height:auto;max-height:80px;object-fit:contain;mix-blend-mode:screen;filter:drop-shadow(0 0 6px rgba(0,185,255,.12));}
+.nh-site-header .nh-header__identity{display:flex;flex-direction:column;justify-content:center;min-width:210px;gap:2px;}
+.nh-site-header .nh-header__identity>a{color:#fff;text-decoration:none;font-weight:760;font-size:clamp(19px,1.4vw,23px);line-height:1.15;white-space:nowrap;letter-spacing:-.025em;}
+.nh-site-header .nh-header__identity>a span{color:#53eaff;}
+.nh-site-header .nh-header__identity>small{font-size:11px;line-height:1.4;letter-spacing:.015em;color:#b4d5e8;max-width:260px;}
+.nh-site-header .nh-header__search{width:min(100%,315px);margin-left:auto;flex:1 1 180px;position:relative;}
+.nh-site-header .nh-header__search input{width:100%;height:42px;padding:10px 14px;background:#072f54;border:1px solid rgba(44,178,230,.44);color:#fff;border-radius:10px;font-size:13px;box-shadow:none;}
+.nh-site-header .nh-header__search input::placeholder{color:#accbe1;}
+.nh-site-header .nh-header__actions{display:flex;align-items:center;gap:10px;flex:0 0 auto;}
+.nh-site-header .nh-header__login,
+.nh-site-header .nh-header__contact{display:inline-flex;align-items:center;justify-content:center;white-space:nowrap;min-height:41px;padding:9px 15px;border-radius:24px;text-decoration:none;font-size:13px;font-weight:700;}
+.nh-site-header .nh-header__login{color:#e5f5ff;border:1px solid rgba(77,199,244,.4);background:rgba(16,69,110,.3);}
+.nh-site-header .nh-header__login:hover{background:#0d436e;}
+.nh-site-header .nh-header__contact{background:linear-gradient(110deg,#008bb9,#05bfd6);color:#041e34;border:1px solid #15b9d2;box-shadow:0 4px 21px #04def42c;}
+.nh-site-header .nh-header__contact:hover{background:#42e9f7;color:#00192c;}
+.nh-site-header .nh-header__mobile-toggle{display:none;min-width:43px;min-height:43px;border:1px solid #328ab3;border-radius:10px;background:#062744;}
+/* Navy menu runs edge-to-edge and uses the spacing from easyIT's pill navigation. */
+.site-header.nh-site-header .nh-header__navigation{
+  display:block;min-height:53px;width:100%;padding:0 clamp(15px,3.5vw,55px);
+  background:rgba(3,27,56,.95)!important;
+  border-top:1px solid rgba(68,171,221,.19)!important;
+  border-bottom:0!important;
+  overflow:visible;box-shadow:none;
+}
+.nh-site-header .nh-header__nav-inner{display:flex;align-items:center;justify-content:center;max-width:1480px;margin:0 auto;min-height:53px;}
+.nh-site-header ul#css3menu0{display:flex;align-items:center;justify-content:center;flex-wrap:nowrap;gap:clamp(3px,.48vw,9px);width:max-content;max-width:100%;margin:0 auto;padding:5px 0;background:none;border:0;border-radius:0;box-shadow:none;}
+.nh-site-header ul#css3menu0>li{position:relative;display:flex;align-items:center;white-space:nowrap;}
+.nh-site-header ul#css3menu0>li>.menu-link,
+.nh-site-header ul#css3menu0>li>.menu-entry>.menu-link,
+.nh-site-header ul#css3menu0>li>.menu-entry>.submenu-button,
+.nh-site-header ul#css3menu0>li:last-child>.menu-link{
+  min-height:39px;display:flex;align-items:center;padding:8px 13px;
+  background:none!important;background-image:none!important;box-shadow:none;
+  border:0;border-radius:20px;margin:0;color:#e5f3ff!important;
+  text-decoration:none;font:650 13px/1.3 'Segoe UI',Inter,Arial,sans-serif;text-shadow:none!important;
+  white-space:nowrap;
+}
+.nh-site-header ul#css3menu0>li.has-submenu>.menu-entry{display:flex;align-items:center;border-radius:20px;overflow:visible;}
+.nh-site-header ul#css3menu0>li>.menu-entry>.submenu-button{min-width:25px;padding:7px 7px 7px 1px;color:#7eebff!important;cursor:pointer;}
+.nh-site-header ul#css3menu0>li.has-submenu>.menu-entry>.menu-link{padding-right:2px;}
+.nh-site-header ul#css3menu0>li:hover>.menu-link,
+.nh-site-header ul#css3menu0>li:hover>.menu-entry,
+.nh-site-header ul#css3menu0>li:focus-within>.menu-entry,
+.nh-site-header ul#css3menu0>li.is-active>.menu-link,
+.nh-site-header ul#css3menu0>li.is-active>.menu-entry{background:#0b4d79!important;border-radius:22px;box-shadow:none;}
+.nh-site-header ul#css3menu0>li.is-active>.menu-link,
+.nh-site-header ul#css3menu0>li.is-active>.menu-entry{box-shadow:inset 0 -2px 0 #19e7fa;}
+.nh-site-header ul#css3menu0 .submenu-panel{z-index:1250;}
+.nh-site-header ul#css3menu0 .submenu{
+  background:#062649!important;border:1px solid rgba(32,177,233,.5)!important;
+  border-radius:12px;box-shadow:0 16px 40px rgba(0,0,0,.45);padding:7px;
+  min-width:240px;
+}
+.nh-site-header ul#css3menu0 .submenu .menu-link,
+.nh-site-header ul#css3menu0 .submenu .submenu-button{color:#eaf8ff;background:none!important;background-image:none!important;font:600 13px/1.4 'Segoe UI',Arial,sans-serif;text-shadow:none;border-radius:7px;}
+.nh-site-header ul#css3menu0 .submenu .menu-link:hover,
+.nh-site-header ul#css3menu0 .submenu li:hover>.menu-entry,
+.nh-site-header ul#css3menu0 .submenu li:hover>.menu-link{background:#0b426a!important;}
+/* Main: same navy-on-navy design as actual easyIT, not a white box on cobalt background. */
+.page-shell{display:block;width:100%;max-width:none;margin:0 auto;}
+.main-content{width:100%;min-width:0;max-width:none;padding:clamp(20px,3vw,44px) clamp(18px,4vw,72px) 75px;}
+.main-content .content-wrap{width:100%;max-width:1390px;margin:0 auto;}
+.main-content .breadcrumbs{margin:0 0 16px;color:#97bdd4;font-size:13px;}
+.main-content .breadcrumbs a{color:#6aebfc;}
+.main-content .eyebrow{font-size:12px;letter-spacing:.11em;color:#60e8f4;text-transform:uppercase;font-weight:800;}
+.main-content .hero:not(.nh-home-hero),
+.main-content .section,
+.main-content .content-hero{background:linear-gradient(145deg,rgba(5,36,74,.95),rgba(6,45,82,.91))!important;border:1px solid rgba(35,156,216,.32);border-radius:18px;box-shadow:0 12px 38px rgba(0,4,20,.19);color:#effaff;}
+.main-content h1,.main-content h2,.main-content h3{color:#f6fbff;}
+.main-content p,.main-content li{color:#bed8e8;}
+.main-content a:not(.button):not(.menu-link){text-underline-offset:.2em;}
+.main-content .button{border-radius:11px;min-height:46px;padding:11px 19px;font-size:14px;font-weight:750;box-shadow:none;}
+.main-content .button--gold{color:#001b30;background:linear-gradient(105deg,#06cbe4,#4df0fa);border:1px solid #1ce5f5;}
+.main-content .button--gold:hover{background:#78f6ff;}
+.main-content .button--blue{color:#e8faff;background:rgba(8,85,133,.6);border:1px solid rgba(55,191,240,.57);}
+.main-content .button--blue:hover{background:#095c8e;}
+/* Hero replicates easyIT's wide two-column arrangement. */
+.main-content .nh-home-hero{
+  width:100%;min-height:530px;display:grid;grid-template-columns:minmax(0,1.03fr) minmax(400px,.97fr);
+  align-items:center;gap:clamp(30px,4vw,66px);padding:clamp(12px,2vw,28px) 0 clamp(42px,4.2vw,62px)!important;
+  border:0!important;border-bottom:1px solid rgba(19,148,207,.27)!important;border-radius:0!important;
+  background:none!important;box-shadow:none!important;overflow:visible!important;
+}
+.main-content .nh-home-hero::after{display:none!important;}
+.main-content .nh-home-hero__copy{min-width:0;}
+.main-content .nh-home-hero .eyebrow{display:block;margin-bottom:18px;color:#62e8f9;}
+.main-content .nh-home-hero h1{
+  font-size:clamp(40px,4.3vw,66px);line-height:1.08;letter-spacing:-.045em;
+  font-weight:780;margin:0 0 23px;max-width:13.3ch;color:#fff!important;
+}
+.main-content .nh-home-hero h1 .nh-accent{color:#40e8f7;}
+.main-content .nh-home-hero__copy>p{font-size:clamp(15px,1.25vw,18px);line-height:1.78;max-width:590px;color:#bed8ec!important;margin:0;}
+.main-content .nh-home-hero .hero-actions{margin:28px 0 0;gap:12px;}
+.main-content .nh-home-hero .stats{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:11px;margin-top:32px;}
+.main-content .nh-home-hero .stat{padding:14px 10px;background:rgba(7,51,94,.69);border:1px solid rgba(24,135,192,.55);border-radius:12px;}
+.main-content .nh-home-hero .stat strong{font-size:21px;line-height:1.25;color:#79f3ff;}
+.main-content .nh-home-hero .stat span{font-size:12px;color:#bad8e7;}
+.main-content .nh-home-hero__media{
+  display:block;position:relative;align-self:stretch;min-height:490px;margin:0;padding:0!important;
+  background:#072443!important;border:1px solid rgba(30,152,213,.57)!important;
+  border-radius:18px!important;box-shadow:0 24px 52px rgba(0,8,26,.4)!important;
+  overflow:hidden!important;
+}
+.main-content .nh-home-hero__media .hero-slider__stage,.main-content .nh-home-hero__media .hero-slider__slide{inset:0;}
+.main-content .nh-home-hero__media .hero-slider__slide img{display:block;width:100%;height:100%;object-fit:cover;object-position:center;}
+.main-content .nh-home-hero__media::after{background:linear-gradient(180deg,rgba(2,15,30,.03) 27%,rgba(2,17,34,.92) 100%);}
+.main-content .nh-home-hero__media .hero-slider__overlay{padding:26px clamp(22px,2.4vw,38px);bottom:47px;}
+.main-content .nh-home-hero__media .hero-slider__overlay>span{font-size:11px;color:#6cf3ff;}
+.main-content .nh-home-hero__media .hero-slider__overlay h2{font-size:clamp(19px,1.7vw,27px);color:#fff;margin:5px 0 12px;}
+.main-content .nh-home-hero__media .hero-slider__overlay ul{font-size:13px;line-height:1.55;margin:0 0 12px;}
+.main-content .nh-home-hero__media .hero-slider__overlay li{color:#ecf9ff;}
+.main-content .nh-home-hero__media .hero-slider__overlay a{color:#79eafd;font-size:13px;}
+/* Sections and cards align visually with the hero; no white content cards. */
+.main-content .section{margin-top:43px;padding:clamp(24px,3vw,45px)!important;}
+.main-content .section-heading{gap:25px;margin-bottom:26px;}
+.main-content .section-heading h2{font-size:clamp(25px,2.4vw,36px);line-height:1.2;letter-spacing:-.025em;}
+.main-content .section-heading p{color:#a9cde2;}
+.main-content .card-grid{gap:16px;}
+.main-content .card,
+.main-content .price-card,
+.main-content .job-card,
+.main-content .quote-card,
+.main-content .step,
+.main-content .steps li,
+.main-content .check-panel{
+  color:#f4faff;background:linear-gradient(145deg,#073760,#05294f)!important;
+  border:1px solid rgba(22,138,204,.46)!important;border-radius:14px;box-shadow:none;
+}
+.main-content .card h3,
+.main-content .price-card h2,.main-content .job-card h2{color:#f3faff!important;}
+.main-content .card p,.main-content .price-card p,.main-content .job-card p{color:#bcd7e9!important;}
+.main-content .card a,.main-content .text-link{color:#6eeefb;}
+.main-content .card:hover{border-color:#2deaff!important;background:#094776!important;}
+.main-content .subject-card__image{border-radius:10px;}
+.main-content .home-reviews,.main-content .learning-gallery{border-color:rgba(30,149,205,.36);background:linear-gradient(145deg,#062b51,#052442)!important;}
+.main-content .stat,.main-content .info-box,.main-content .topic-chip,.main-content .tag-list li{border-color:rgba(35,158,204,.4);}
+/* Shared footer visually connects to body and header. */
+.site-footer.easyit-footer{background:linear-gradient(155deg,#021429,#041e39 62%,#042344)!important;border-top:1px solid #148ac3;padding-top:48px;}
+.site-footer.easyit-footer .easyit-footer__grid{max-width:1360px;grid-template-columns:minmax(0,1.5fr) minmax(150px,.7fr) minmax(220px,.9fr);gap:clamp(26px,5vw,90px);}
+.site-footer.easyit-footer .easyit-footer__brand img{width:146px;height:auto;max-width:146px;max-height:76px;object-fit:contain;}
+.site-footer.easyit-footer .easyit-footer__brand strong{font-size:18px;color:#fff;}
+.site-footer.easyit-footer .easyit-footer__brand small{font-size:12px;color:#66eafb;}
+.site-footer.easyit-footer .easyit-footer__identity p{max-width:380px;line-height:1.7;}
+.site-footer.easyit-footer .easyit-footer__contact .easyit-footer__cta{background:#064a72;border-color:#139fd0;border-radius:11px;color:#fff;}
+.site-footer.easyit-footer .easyit-footer__bottom{max-width:1360px;}
+/* Some legacy content has white cards with hardcoded dark headings. Keep light
+   forms readable while restoring a consistent dark visual frame. */
+.main-content .field input,.main-content .field select,.main-content .field textarea{
+  color:#102840!important;background:#f6fbff!important;border:1px solid #7cbed8!important;
+}
+.main-content .field label{color:#edf8ff;}
+.main-content .notice{color:#16344c;background:#f3faff;}
+.main-content .notice p,.main-content .notice li{color:inherit;}
+.main-content .faq details{border-color:#277ba3;}
+.main-content .faq summary{color:#e9f8ff;}
+@media (max-width:1260px){
+ .nh-site-header .nh-header__inner{flex-wrap:wrap;gap:10px 18px;min-height:82px;}
+ .nh-site-header .nh-header__search{order:3;width:100%;flex:1 1 100%;margin:0;max-width:none;}
+ .nh-site-header .nh-header__identity{margin-right:auto;}
+ .nh-site-header ul#css3menu0>li>.menu-link,.nh-site-header ul#css3menu0>li>.menu-entry>.menu-link,.nh-site-header ul#css3menu0>li:last-child>.menu-link{padding-inline:9px;font-size:12px;}
+}
+@media (max-width:1050px){
+ .nh-site-header .nh-header__inner{flex-wrap:nowrap;min-height:76px;padding-block:7px;}
+ .nh-site-header .nh-header__brand{width:135px;}
+ .nh-site-header .nh-header__brand img{width:135px;max-height:64px;}
+ .nh-site-header .nh-header__identity{min-width:0;margin-right:auto;}
+ .nh-site-header .nh-header__identity>a{font-size:18px;}
+ .nh-site-header .nh-header__identity>small{font-size:10px;}
+ .nh-site-header .nh-header__search{display:none;}
+ .nh-site-header .nh-header__mobile-toggle{display:block;}
+ .site-header.nh-site-header .nh-header__navigation{display:none;max-height:calc(100dvh - 75px);overflow:auto;padding:8px 18px 20px;}
+ .site-header.nh-site-header .nh-header__navigation.is-open{display:block;}
+ .nh-site-header .nh-header__nav-inner{display:block;}
+ .nh-site-header ul#css3menu0{display:block;max-width:100%;width:100%;margin:0;padding:0;}
+ .nh-site-header ul#css3menu0>li{display:block;width:100%;border-bottom:1px solid #1a6489;}
+ .nh-site-header ul#css3menu0>li>.menu-link,
+ .nh-site-header ul#css3menu0>li>.menu-entry>.menu-link,
+ .nh-site-header ul#css3menu0>li:last-child>.menu-link{min-height:46px;justify-content:flex-start;padding:12px 15px;font-size:15px;}
+ .nh-site-header ul#css3menu0>li.has-submenu>.menu-entry{display:flex;width:100%;justify-content:space-between;}
+ .nh-site-header ul#css3menu0>li>.menu-entry>.submenu-button{min-width:48px;justify-content:center;}
+ .nh-site-header ul#css3menu0 .submenu-panel{position:static;}
+ .nh-site-header ul#css3menu0 .submenu{margin:0 8px 12px 20px;padding:5px;border-left:3px solid #17dff2;box-shadow:none;border-radius:7px;}
+ .main-content .nh-home-hero{grid-template-columns:minmax(0,1fr) minmax(320px,.84fr);gap:25px;}
+ .main-content .nh-home-hero__media{min-height:430px;}
+ .main-content .nh-home-hero h1{font-size:clamp(35px,4.3vw,52px);}
+}
+@media(max-width:790px){
+ html{scroll-padding-top:85px;}
+ .nh-site-header .nh-header__identity>small{display:none;}
+ .nh-site-header .nh-header__contact{display:none;}
+ .main-content{padding:18px 18px 55px;}
+ .main-content .nh-home-hero{grid-template-columns:1fr;gap:30px;padding-bottom:32px!important;}
+ .main-content .nh-home-hero h1{font-size:clamp(39px,8vw,54px);max-width:none;}
+ .main-content .nh-home-hero__media{min-height:440px;}
+ .main-content .nh-home-hero .stats{max-width:620px;}
+ .site-footer.easyit-footer .easyit-footer__grid{grid-template-columns:1fr 1fr;gap:26px;}
+ .site-footer.easyit-footer .easyit-footer__identity{grid-column:1/-1;}
+}
+@media(max-width:520px){
+ .nh-site-header .nh-header__brand,.nh-site-header .nh-header__brand img{width:110px;}
+ .nh-site-header .nh-header__identity>a{font-size:15px;white-space:normal;}
+ .nh-site-header .nh-header__login{font-size:11px;min-height:38px;padding:7px 11px;}
+ .nh-site-header .nh-header__actions{gap:6px;}
+ .main-content .nh-home-hero h1{font-size:38px;}
+ .main-content .nh-home-hero .stats{gap:7px;}
+ .main-content .nh-home-hero .stat{padding:12px 6px;}
+ .main-content .nh-home-hero .stat strong{font-size:18px;}
+ .main-content .nh-home-hero .stat span{font-size:10px;}
+ .main-content .nh-home-hero__media{min-height:420px;}
+ .main-content .nh-home-hero__media .hero-slider__overlay{padding:20px;bottom:42px;}
+ .main-content .nh-home-hero__media .hero-slider__overlay h2{font-size:21px;}
+ .main-content .section{padding:22px 18px!important;}
+ .site-footer.easyit-footer .easyit-footer__grid{grid-template-columns:1fr;}
+ .site-footer.easyit-footer .easyit-footer__identity{grid-column:auto;}
+}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto;}}
+
+/* 21.11.2026: Keine hellen Formular-/Hinweiskästen im öffentlichen Navy-Layout.
+   Bewusst nur .main-content: Admin- und interne Module bleiben unberührt. */
+.main-content .field input:not([type="checkbox"]):not([type="radio"]),
+.main-content .field select,
+.main-content .field textarea,
+.main-content .contact-form input:not([type="checkbox"]):not([type="radio"]),
+.main-content .contact-form select,
+.main-content .contact-form textarea{
+  background:#0e3456!important;
+  border:1px solid rgba(111,207,239,.58)!important;
+  color:#f7fcff!important;
+  box-shadow:inset 0 1px 4px rgba(0,8,29,.18);
+}
+.main-content .field input::placeholder,
+.main-content .field textarea::placeholder,
+.main-content .contact-form input::placeholder,
+.main-content .contact-form textarea::placeholder{color:#bdd8e7!important;opacity:1}
+.main-content .field select option,.main-content .contact-form select option{background:#0e3456;color:#fff}
+.main-content .notice{background:#133d5d;color:#e9f7ff!important;border:1px solid rgba(87,184,226,.43)}
+.main-content .notice p,.main-content .notice li{color:inherit!important}
+.main-content .notice--success{background:#103e45;color:#eafff8!important;border-color:#4ebfa5}
+.main-content .notice--error{background:#48283d;color:#fff0f3!important;border-color:#e18aa0}

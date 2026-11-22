@@ -10,6 +10,7 @@ ErrorDocument 500 /errors/500.php
 
   # Dynamische XML-Sitemap aus indexierbaren Seiten und veröffentlichten Blogartikeln.
   RewriteRule ^sitemap\.xml$ sitemap-xml.php [END]
+  RewriteRule ^robots\.txt$ robots.php [END]
 
   # Lokaler Betrieb:
   # http://localhost/nh_hor -> htdocs/nh_hor
@@ -23,16 +24,8 @@ ErrorDocument 500 /errors/500.php
   # Separate Domains bleiben erhalten.
   # Keine automatische Umleitung von easyit-nachhilfe.de.
 
-  # Doppelte Startseiten-URL vermeiden: /index.php wird auf / kanonisiert.
-  RewriteCond %{HTTP_HOST} ^(?:www\.)?easyit-leipzig\.de$ [NC]
-  RewriteCond %{THE_REQUEST} \s/+index\.php(?:[?\s]) [NC]
-  RewriteRule ^index\.php$ https://easyit-leipzig.de/ [R=301,L,NE]
-
-  # Hauptdomain: HTTPS und Variante ohne www erzwingen.
-  RewriteCond %{HTTP_HOST} ^www\.easyit-leipzig\.de$ [NC,OR]
-  RewriteCond %{HTTPS} !=on
-  RewriteCond %{HTTP_HOST} ^(?:www\.)?easyit-leipzig\.de$ [NC]
-  RewriteRule ^ https://easyit-leipzig.de%{REQUEST_URI} [R=301,L,NE]
+  # Nachhilfe ist eine eigene Website. Keine Weiterleitung auf die easyIT-Unternehmensdomain.
+  # Die gewünschte kanonische Adresse kommt aus SITE_BASE_URL / config/site.php.
 
   RewriteRule ^storage/ - [F,L]
   RewriteRule ^database/ - [F,L]

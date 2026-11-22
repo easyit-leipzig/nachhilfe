@@ -50,7 +50,10 @@ $pageSchemas = [
 ];
 ?><!doctype html>
 <html lang="de" data-theme="leipzig-blau">
-<head><?php require __DIR__ . '/meta.php'; ?></head>
+<head><?php require __DIR__ . '/meta.php'; ?><!-- easyIT-GLOBAL-DARK-DESIGN-v1:START -->
+<?php require_once __DIR__ . '/../includes/easyit-theme-head.php'; ?>
+<!-- easyIT-GLOBAL-DARK-DESIGN-v1:END -->
+</head>
 <body>
 <?php require __DIR__ . '/header.php'; ?>
 <div class="page-shell">

@@ -43,3 +43,18 @@
 @media(max-width:700px){
   .review-strengths__grid{grid-template-columns:1fr}
 }
+
+/* Einheitliche dunkle Bewertungs- und Teamkarten. */
+.main-content .tutor-team-hero{
+  background:radial-gradient(circle at 100% 0,rgba(76,217,255,.13),transparent 36%),linear-gradient(145deg,#103a60,#092745)!important;
+  color:#e9f7ff;
+}
+.main-content .review-strengths>h3,.main-content .tutor-inline-reviews>h3{color:#f5fbff}
+.main-content .review-strengths__grid div,.main-content .tutor-inline-reviews blockquote{
+  color:#e9f7ff;background:linear-gradient(145deg,#104063,#0a2d4d);
+  border:1px solid rgba(78,198,237,.32);box-shadow:0 9px 25px rgba(0,6,22,.13);
+}
+.main-content .review-strengths__grid strong{color:#71ebf8}
+.main-content .review-strengths__grid span,.main-content .tutor-inline-reviews blockquote p,
+.main-content .tutor-inline-reviews blockquote footer span{color:#cee2ee}
+.main-content .review-origin-note,.main-content .review-legal-note{color:#bcd9e9}

@@ -299,3 +299,43 @@ a { text-underline-offset:.17em; }
   .easyit-footer__identity{grid-column:auto;}
 }
 @media(prefers-reduced-motion:reduce) {html{scroll-behavior:auto;}}
+
+/* Relaunch Navigation 2026-11: acht klare Einstiegspunkte, berührungsfreundliche Untermenüs */
+.site-header ul#css3menu0 > li > .menu-link,
+.site-header ul#css3menu0 > li > .menu-entry > .menu-link {white-space:nowrap;}
+.site-header ul#css3menu0 .submenu-panel > .submenu {
+  max-height:min(70vh,640px); overflow-y:auto; overscroll-behavior:contain;
+  scrollbar-color:#2c789c #0c3152;
+}
+.site-header ul#css3menu0 .submenu .menu-link {min-width:215px;white-space:normal;line-height:1.3;}
+.site-header ul#css3menu0 li.is-active > .menu-link,
+.site-header ul#css3menu0 li.is-active > .menu-entry > .menu-link {box-shadow:inset 0 -3px 0 var(--cyan,#50d9f3);}
+@media (max-width:1050px) {
+ .site-header .horizontal-nav {max-height:calc(100dvh - 110px);overflow-y:auto;overscroll-behavior:contain;}
+ .site-header ul#css3menu0 .submenu-panel > .submenu {max-height:none;overflow:visible;}
+ .site-header ul#css3menu0 .submenu .menu-link {min-width:0;}
+}
+
+/* Finale Corporate-Anpassung: grosszügiges easyIT-Logo mit eigenständiger Nachhilfe-Subline */
+.easyit-brand{min-width:340px;gap:1.05rem}
+.easyit-brand__logo-link{max-width:171px}
+.site-header .easyit-brand__logo-link img{width:168px !important;max-width:168px !important;height:100px !important;max-height:100px !important}
+.easyit-brand__copy{gap:.15rem}
+.easyit-brand__subtitle{font-size:.89rem;font-weight:700;color:#deeffa}
+.easyit-brand__subjects{display:block;max-width:270px;color:#91ddeb;font-size:.72rem;line-height:1.4;letter-spacing:.015em}
+.site-header ul#css3menu0 > li:last-child > .menu-link{color:#071b34 !important;background:#54dbea !important;border-radius:9px;margin:.27rem .2rem;min-height:39px;align-self:center;padding:.48rem .95rem;font-weight:800;box-shadow:0 2px 9px rgba(0,10,30,.18)}
+.site-header ul#css3menu0 > li:last-child > .menu-link:hover,
+.site-header ul#css3menu0 > li:last-child > .menu-link:focus-visible{background:#ffcd49 !important;color:#061b31 !important}
+@media(max-width:1250px){
+ .easyit-brand{min-width:0;gap:.55rem}
+ .easyit-brand__logo-link{max-width:120px}
+ .site-header .easyit-brand__logo-link img{width:115px !important;max-width:115px !important;height:83px !important;max-height:83px !important}
+ .easyit-brand__subjects{font-size:.67rem;max-width:230px}
+}
+@media(max-width:700px){
+ .site-header .easyit-brand__logo-link img{width:82px !important;max-width:82px !important;height:58px !important;max-height:58px !important}
+ .easyit-brand__subjects{display:none}
+}
+@media(max-width:1050px){
+ .site-header ul#css3menu0 > li:last-child > .menu-link{display:flex;width:calc(100% - 20px);margin:8px 10px;align-items:center;justify-content:center}
+}

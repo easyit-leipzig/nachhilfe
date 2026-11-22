@@ -50,7 +50,7 @@ $config['environment'] = $isLocal ? 'local' : 'server';
 $config['detected_host'] = $host;
 $config['loaded_config_file'] = $configFilename;
 
-$brandKey = 'easyit';
+$brandKey = 'easyit_homepage';
 if (in_array($host, ['thiele-nachhilfe.de', 'www.thiele-nachhilfe.de'], true)) {
     $brandKey = 'thiele';
 }

@@ -18,7 +18,10 @@ if (!$valid) {
 }
 ?><!doctype html>
 <html lang="de">
-<head><?php require __DIR__ . '/includes/meta.php'; ?></head>
+<head><?php require __DIR__ . '/includes/meta.php'; ?><!-- easyIT-GLOBAL-DARK-DESIGN-v1:START -->
+<?php require_once __DIR__ . '/includes/easyit-theme-head.php'; ?>
+<!-- easyIT-GLOBAL-DARK-DESIGN-v1:END -->
+</head>
 <body>
 <?php require __DIR__ . '/includes/header.php'; ?>
 <div class="page-shell">

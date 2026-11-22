@@ -1,4 +1,4 @@
-const CACHE_VERSION = 'easyit-assets-3-17-header-half';
+const CACHE_VERSION = 'easyit-nachhilfe-layout-20261121b';
 const CORE_ASSETS = [
   'assets/img/subjects/latein.svg',
   'assets/img/subjects/spanisch.svg',
@@ -13,6 +13,8 @@ const CORE_ASSETS = [
   'assets/img/stud-lern.svg',
   './',
   'assets/css/main.a58c73c19cb9.css',
+  'assets/css/easyit-unified.css',
+  'assets/img/easyit-leipzig-original.png',
   'assets/css/header.56eb2f6e7ed4.css',
   'assets/css/sidebar.0ea8ee0a632a.css',
   'assets/css/content.701997f4d583.css',

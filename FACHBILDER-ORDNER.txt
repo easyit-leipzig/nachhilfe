@@ -1,0 +1,36 @@
+ORDNER DER FACHBILDER
+====================
+
+Im Hauptverzeichnis der bestehenden Webseite:
+
+nachhilfe/
+  assets/
+    fachbilder/                    <-- FESTER ORDNER FUER ALLE FACHBILDER
+      mathematik-01.svg
+      mathematik-02.svg
+      mathematik-03.svg
+      mathematik-04.svg
+      physik-01.svg
+      physik-02.svg
+      physik-03.svg
+      physik-04.svg
+      ... weitere Faecher (je 4 Bilder)
+      fachbilder.css
+      fachbilder.js
+      fachbilder.json
+  includes/
+    fachbilder.php                 <-- PHP-Komponente zur Einbindung
+  install-fachbilder.php          <-- Installer (nach Anwendung loeschen)
+  Fachbilder-installieren.bat      <-- Windows-Installer (nach Anwendung loeschen)
+
+Im Browser Beispielbild aufrufen:
+http://localhost/nachhilfe/assets/fachbilder/mathematik-01.svg
+
+AUSFUEHRUNG
+1. Alle Paketdateien nach C:\xampp\htdocs\nachhilfe\ kopieren.
+2. Fachbilder-installieren.bat doppelklicken und bestaetigen.
+3. Der Installer ergaenzt automatisch die PHP-Fachseiten anhand ihrer Dateinamen.
+4. Nicht erkannte PHP-Templates muessen manuell eingebunden werden
+   (siehe README-Installation.txt).
+
+Die Bilder bleiben komplett lokal. Nicht in der Datenbank speichern.

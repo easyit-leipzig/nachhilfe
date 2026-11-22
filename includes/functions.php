@@ -13,52 +13,36 @@ function e(string $value): string
 function app_base_path(): string
 {
     static $basePath = null;
-    if ($basePath !== null) {
-        return $basePath;
+    if ($basePath !== null) return $basePath;
+
+    // Explicit deployment override; relative links are otherwise inferred from
+    // the actual URL, NOT from the former development directory /nh_hor.
+    $explicit = getenv('SITE_BASE_PATH');
+    if (is_string($explicit) && trim($explicit) !== '') {
+        return $basePath = '/' . trim($explicit, '/');
     }
 
-    // 1. Explizite Umgebungsvariable hat höchste Priorität.
-    $environmentPath = getenv('SITE_BASE_PATH');
-    if (is_string($environmentPath) && trim($environmentPath) !== '') {
-        $basePath = '/' . trim($environmentPath, '/');
-        return $basePath === '/' ? '' : $basePath;
-    }
-
-    // 2. Verbindlicher Pfad aus der URL-abhängigen Hauptkonfiguration.
-    // Lokal steht dort /nh_hor, auf dem Produktivserver ein leerer Pfad.
-    try {
-        $applicationConfig = require __DIR__ . '/../config/config.php';
-        $configuredPath = (string)($applicationConfig['app']['base_path'] ?? '');
-        $configuredPath = trim($configuredPath);
-        if ($configuredPath !== '') {
-            $basePath = '/' . trim($configuredPath, '/');
-            return $basePath === '/' ? '' : $basePath;
-        }
-        if (($applicationConfig['environment'] ?? '') === 'server') {
-            $basePath = '';
-            return $basePath;
-        }
-    } catch (Throwable) {
-        // Die robuste Fallback-Erkennung unten bleibt verfügbar.
-    }
-
-    // 3. Fallback für ältere Installationen ohne base_path-Eintrag.
-    $host = strtolower((string)($_SERVER['HTTP_HOST'] ?? ''));
-    $hostWithoutPort = (string)preg_replace('/:\\d+$/', '', $host);
-    $isLocal = in_array($hostWithoutPort, ['localhost', '127.0.0.1', '::1'], true);
-
+    $host = strtolower((string) ($_SERVER['HTTP_HOST'] ?? $_SERVER['SERVER_NAME'] ?? ''));
+    $host = (string) preg_replace('/:\d+$/', '', $host);
+    $isLocal = in_array($host, ['localhost', '127.0.0.1', '::1'], true)
+        || str_ends_with($host, '.local') || str_ends_with($host, '.test');
     if ($isLocal) {
-        $scriptName = str_replace('\\\\', '/', (string)($_SERVER['SCRIPT_NAME'] ?? ''));
-        if (preg_match('~^(/[^/]+)(?:/|$)~', $scriptName, $match) === 1) {
-            $basePath = $match[1];
-            return $basePath;
-        }
-        $basePath = '/nh_hor';
+        $script = str_replace('\\', '/', (string)($_SERVER['SCRIPT_NAME'] ?? ''));
+        $scriptPath = trim($script, '/');
+        // /nachhilfe/index.php and /nachhilfe/admin/content.php -> /nachhilfe.
+        // /index.php (site root) -> ''.
+        $first = explode('/', $scriptPath)[0] ?? '';
+        $basePath = ($first !== '' && !str_ends_with(strtolower($first), '.php')) ? '/' . $first : '';
         return $basePath;
     }
 
-    $basePath = '';
-    return $basePath;
+    try {
+        $cfg = require __DIR__ . '/../config/config.php';
+        $configured = trim((string)($cfg['app']['base_path'] ?? ''), '/');
+        return $basePath = $configured !== '' ? '/' . $configured : '';
+    } catch (Throwable) {
+        return $basePath = '';
+    }
 }
 
 function app_path(string $path = '/'): string

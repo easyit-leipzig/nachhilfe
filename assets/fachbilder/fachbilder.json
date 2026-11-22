@@ -1,0 +1,327 @@
+{
+  "mathematik": {
+    "name": "Mathematik",
+    "bilder": [
+      {
+        "datei": "mathematik-01.svg",
+        "titel": "Funktionen & Graphen",
+        "beschreibung": "Parabeln, Geraden und Änderungsraten"
+      },
+      {
+        "datei": "mathematik-02.svg",
+        "titel": "Geometrie & Trigonometrie",
+        "beschreibung": "Formen, Winkel und Beziehungen"
+      },
+      {
+        "datei": "mathematik-03.svg",
+        "titel": "Analysis & Integrale",
+        "beschreibung": "Flächen und Zusammenhänge"
+      },
+      {
+        "datei": "mathematik-04.svg",
+        "titel": "Stochastik",
+        "beschreibung": "Wahrscheinlichkeit verstehen"
+      }
+    ]
+  },
+  "physik": {
+    "name": "Physik",
+    "bilder": [
+      {
+        "datei": "physik-01.svg",
+        "titel": "Optik & Licht",
+        "beschreibung": "Brechung, Reflexion, Linsen"
+      },
+      {
+        "datei": "physik-02.svg",
+        "titel": "Elektrizität",
+        "beschreibung": "Stromkreise und Schwingungen"
+      },
+      {
+        "datei": "physik-03.svg",
+        "titel": "Atom- & Kernphysik",
+        "beschreibung": "Teilchen und Strahlung"
+      },
+      {
+        "datei": "physik-04.svg",
+        "titel": "Wellen & Interferenz",
+        "beschreibung": "Schwingungen sichtbar machen"
+      }
+    ]
+  },
+  "chemie": {
+    "name": "Chemie",
+    "bilder": [
+      {
+        "datei": "chemie-01.svg",
+        "titel": "Stoffe & Reaktionen",
+        "beschreibung": "Beobachten und erklären"
+      },
+      {
+        "datei": "chemie-02.svg",
+        "titel": "Moleküle & Bindungen",
+        "beschreibung": "Strukturen verstehen"
+      },
+      {
+        "datei": "chemie-03.svg",
+        "titel": "Periodensystem",
+        "beschreibung": "Elemente und Eigenschaften"
+      },
+      {
+        "datei": "chemie-04.svg",
+        "titel": "Säuren & Basen",
+        "beschreibung": "Experimente und Gleichgewichte"
+      }
+    ]
+  },
+  "informatik": {
+    "name": "Informatik",
+    "bilder": [
+      {
+        "datei": "informatik-01.svg",
+        "titel": "Programmieren",
+        "beschreibung": "Schritt für Schritt zum Code"
+      },
+      {
+        "datei": "informatik-02.svg",
+        "titel": "Netzwerke",
+        "beschreibung": "Daten und Verbindungen"
+      },
+      {
+        "datei": "informatik-03.svg",
+        "titel": "Datenbanken",
+        "beschreibung": "Informationen sinnvoll ordnen"
+      },
+      {
+        "datei": "informatik-04.svg",
+        "titel": "Webentwicklung",
+        "beschreibung": "Webseiten verstehen und bauen"
+      }
+    ]
+  },
+  "deutsch": {
+    "name": "Deutsch",
+    "bilder": [
+      {
+        "datei": "deutsch-01.svg",
+        "titel": "Lesen & Verstehen",
+        "beschreibung": "Texte erschließen"
+      },
+      {
+        "datei": "deutsch-02.svg",
+        "titel": "Ausdruck & Kommunikation",
+        "beschreibung": "Gedanken klar formulieren"
+      },
+      {
+        "datei": "deutsch-03.svg",
+        "titel": "Rechtschreibung",
+        "beschreibung": "Sicher mit Sprache umgehen"
+      },
+      {
+        "datei": "deutsch-04.svg",
+        "titel": "Grammatik",
+        "beschreibung": "Satzbau und Struktur"
+      }
+    ]
+  },
+  "englisch": {
+    "name": "Englisch",
+    "bilder": [
+      {
+        "datei": "englisch-01.svg",
+        "titel": "Reading & Listening",
+        "beschreibung": "Texte sicher verstehen"
+      },
+      {
+        "datei": "englisch-02.svg",
+        "titel": "Speaking",
+        "beschreibung": "Englisch im Gespräch"
+      },
+      {
+        "datei": "englisch-03.svg",
+        "titel": "Vocabulary",
+        "beschreibung": "Wortschatz erweitern"
+      },
+      {
+        "datei": "englisch-04.svg",
+        "titel": "Grammar",
+        "beschreibung": "Zeitformen und Satzbau"
+      }
+    ]
+  },
+  "franzoesisch": {
+    "name": "Französisch",
+    "bilder": [
+      {
+        "datei": "franzoesisch-01.svg",
+        "titel": "Lire & comprendre",
+        "beschreibung": "Französisch verstehen"
+      },
+      {
+        "datei": "franzoesisch-02.svg",
+        "titel": "Parler",
+        "beschreibung": "Im Gespräch sicher werden"
+      },
+      {
+        "datei": "franzoesisch-03.svg",
+        "titel": "Vocabulaire",
+        "beschreibung": "Wörter im Zusammenhang"
+      },
+      {
+        "datei": "franzoesisch-04.svg",
+        "titel": "Grammaire",
+        "beschreibung": "Strukturen erkennen"
+      }
+    ]
+  },
+  "spanisch": {
+    "name": "Spanisch",
+    "bilder": [
+      {
+        "datei": "spanisch-01.svg",
+        "titel": "Leer & entender",
+        "beschreibung": "Texte und Hörverstehen"
+      },
+      {
+        "datei": "spanisch-02.svg",
+        "titel": "Hablar",
+        "beschreibung": "Sprechen und reagieren"
+      },
+      {
+        "datei": "spanisch-03.svg",
+        "titel": "Vocabulario",
+        "beschreibung": "Wortschatz im Alltag"
+      },
+      {
+        "datei": "spanisch-04.svg",
+        "titel": "Gramática",
+        "beschreibung": "Satzbau und Formen"
+      }
+    ]
+  },
+  "latein": {
+    "name": "Latein",
+    "bilder": [
+      {
+        "datei": "latein-01.svg",
+        "titel": "Texte verstehen",
+        "beschreibung": "Lateinische Texte entschlüsseln"
+      },
+      {
+        "datei": "latein-02.svg",
+        "titel": "Antike Lebenswelt",
+        "beschreibung": "Kultur und Geschichte"
+      },
+      {
+        "datei": "latein-03.svg",
+        "titel": "Vokabeln lernen",
+        "beschreibung": "Formen sicher erkennen"
+      },
+      {
+        "datei": "latein-04.svg",
+        "titel": "Grammatik",
+        "beschreibung": "Kasus und Satzgefüge"
+      }
+    ]
+  },
+  "sprachen": {
+    "name": "Sprachen",
+    "bilder": [
+      {
+        "datei": "sprachen-01.svg",
+        "titel": "Leseverstehen",
+        "beschreibung": "Zusammenhänge im Text"
+      },
+      {
+        "datei": "sprachen-02.svg",
+        "titel": "Sprechen & Dialog",
+        "beschreibung": "Sprache aktiv verwenden"
+      },
+      {
+        "datei": "sprachen-03.svg",
+        "titel": "Wortschatz",
+        "beschreibung": "Begriffe nachhaltig lernen"
+      },
+      {
+        "datei": "sprachen-04.svg",
+        "titel": "Grammatik",
+        "beschreibung": "Sprachstrukturen verstehen"
+      }
+    ]
+  },
+  "biologie": {
+    "name": "Biologie",
+    "bilder": [
+      {
+        "datei": "biologie-01.svg",
+        "titel": "Zellbiologie",
+        "beschreibung": "Aufbau und Funktion"
+      },
+      {
+        "datei": "biologie-02.svg",
+        "titel": "Genetik",
+        "beschreibung": "Erbinformation verstehen"
+      },
+      {
+        "datei": "biologie-03.svg",
+        "titel": "Pflanzenbiologie",
+        "beschreibung": "Licht, Wachstum und Energie"
+      },
+      {
+        "datei": "biologie-04.svg",
+        "titel": "Ökologie",
+        "beschreibung": "Lebensräume und Beziehungen"
+      }
+    ]
+  },
+  "geschichte": {
+    "name": "Geschichte",
+    "bilder": [
+      {
+        "datei": "geschichte-01.svg",
+        "titel": "Zeitleisten",
+        "beschreibung": "Ereignisse einordnen"
+      },
+      {
+        "datei": "geschichte-02.svg",
+        "titel": "Antike",
+        "beschreibung": "Kulturen und Bauwerke"
+      },
+      {
+        "datei": "geschichte-03.svg",
+        "titel": "Quellenanalyse",
+        "beschreibung": "Vergangenheit verstehen"
+      },
+      {
+        "datei": "geschichte-04.svg",
+        "titel": "Epochen im Vergleich",
+        "beschreibung": "Entwicklungen erkennen"
+      }
+    ]
+  },
+  "geografie": {
+    "name": "Geografie",
+    "bilder": [
+      {
+        "datei": "geografie-01.svg",
+        "titel": "Kartenkunde",
+        "beschreibung": "Räume und Orientierung"
+      },
+      {
+        "datei": "geografie-02.svg",
+        "titel": "Erde & Kontinente",
+        "beschreibung": "Globale Zusammenhänge"
+      },
+      {
+        "datei": "geografie-03.svg",
+        "titel": "Landschaften",
+        "beschreibung": "Relief und Entstehung"
+      },
+      {
+        "datei": "geografie-04.svg",
+        "titel": "Klima & Wetter",
+        "beschreibung": "Prozesse nachvollziehen"
+      }
+    ]
+  }
+}

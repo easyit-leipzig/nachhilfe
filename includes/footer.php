@@ -5,17 +5,18 @@ $site = $site ?? require __DIR__ . '/../config/site.php';
     <div class="easyit-footer__grid">
         <div class="easyit-footer__identity">
             <a href="<?= e(app_path('/index.php')) ?>" class="easyit-footer__brand" aria-label="easyIT Nachhilfe – Startseite">
-                <img src="<?= e(app_path('/assets/img/brand-logo.svg')) ?>" alt="easyIT Nachhilfe" width="1536" height="1024" loading="lazy">
-                <span><strong>easyIT Nachhilfe</strong><small>Verstehen. Anwenden. Weiterkommen.</small></span>
+                <img src="<?= e(app_path('/assets/img/easyit-leipzig-original.png')) ?>" alt="easyIT Nachhilfe" width="1536" height="1024" loading="lazy">
+                <span><strong>Nachhilfe in Leipzig</strong><small>Ein Angebot von easyIT Leipzig</small></span>
             </a>
-            <p>Individuelle Nachhilfe für Leipzig und Umgebung – strukturiert, verständlich und persönlich.</p>
+            <p>Naturwissenschaften, Sprachen und Soziales. Individuelle Nachhilfe für Leipzig und Umgebung – strukturiert, verständlich und persönlich.</p>
         </div>
         <nav class="easyit-footer__links" aria-label="Schnellnavigation">
-            <h2>Entdecken</h2>
+            <h2>Nachhilfe entdecken</h2>
             <a href="<?= e(app_path('/faecher.php')) ?>">Unsere Fächer</a>
             <a href="<?= e(app_path('/methodik.php')) ?>">Methodik</a>
             <a href="<?= e(app_path('/preise.php')) ?>">Preise &amp; Ablauf</a>
             <a href="<?= e(app_path('/bewertungen.php')) ?>">Erfahrungen</a>
+            
         </nav>
         <div class="easyit-footer__contact">
             <h2>Kontakt</h2>

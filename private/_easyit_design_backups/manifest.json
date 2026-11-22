@@ -1,0 +1,200 @@
+{
+    "format": 1,
+    "files": {
+        "Fachbilder-pruefen.php": {
+            "backup": "files/Fachbilder-pruefen.php.bak",
+            "original_sha256": "865e3b35de564d0f8b5f8c30df4899c6da5a3edd66fc93713f6a57baae84d1f3",
+            "installed_sha256": "df784f924998c882efeb30fe66f63d7b96a02c22e35975bb703b8cc95fc794c3"
+        },
+        "VORSCHAU.html": {
+            "backup": "files/VORSCHAU.html.bak",
+            "original_sha256": "78dae2dd8aecc43bd7ea00400c12ffdcaa71bc457af041c3738438690e3789d0",
+            "installed_sha256": "37c14dac2b9edcc48c2c378374050e557fbad18b747a584786dee95984a6f360"
+        },
+        "admin/image-credits.php": {
+            "backup": "files/admin/image-credits.php.bak",
+            "original_sha256": "167e642ec6760ccacfc6b211deecf61383824e9e8f1bfeb3384c0b4b95d3d4b5",
+            "installed_sha256": "c0919051175aa29de263a6c86bfd5c06fd9ac9d2d0bd81e3ab9fec65669e4ebc"
+        },
+        "admin/includes/header.php": {
+            "backup": "files/admin/includes/header.php.bak",
+            "original_sha256": "c9b92428e4e4e92898e4f94fe14017cfec63bb97acc5fa6c313ef032a321fec7",
+            "installed_sha256": "8f3db2a536b0d166da1018ea4506739db71e1c8295dd81acb073e387abd5dfcc"
+        },
+        "anfrage-erfolgreich.php": {
+            "backup": "files/anfrage-erfolgreich.php.bak",
+            "original_sha256": "651b8996527461759891e5e3d24b755c58e341eb4a016e54e45c63400de237b4",
+            "installed_sha256": "4de40de6339ea1348fa43d592bc0cf836202074cf0def645114edf808e93ba59"
+        },
+        "bewertungen.php": {
+            "backup": "files/bewertungen.php.bak",
+            "original_sha256": "a75046a435fee464a09ead2f86a517449a33cd4da4e7a7a92a49c47fd0a7c095",
+            "installed_sha256": "9be395a09e39cce9e65ddfba13c04cc237bbaeef5583863fdd81232bd9ffa770"
+        },
+        "bildnachweis.php": {
+            "backup": "files/bildnachweis.php.bak",
+            "original_sha256": "009d583203e401e7eeda2576e6e648b0a4a3c0d4dc238239012a7de40628b5ce",
+            "installed_sha256": "6c98026936a955736b8227f9276bf181e2efacf0606b0a58ddd3586d489eb92f"
+        },
+        "blog-artikel.php": {
+            "backup": "files/blog-artikel.php.bak",
+            "original_sha256": "e5a9ceef629424cdc921751b4a2956bad029e33fec94972f6b0e4e0195563ab8",
+            "installed_sha256": "586aa92ad479222e4400f15fc5331a623907adfeab9f9f5a39472c9f524f6d4f"
+        },
+        "blog.php": {
+            "backup": "files/blog.php.bak",
+            "original_sha256": "fbc05f495b49c78865003d6df82feb8eaa4717ad71b306d995e60328d4c90b2d",
+            "installed_sha256": "557b5013dc202375f2160ccd1a2985decb93ece6d870958d5abd63a528474447"
+        },
+        "datenschutz.php": {
+            "backup": "files/datenschutz.php.bak",
+            "original_sha256": "77cef07726b392dfbd62e87c0f05bdc6ef1cb0e1bed5b12b761f6bb3e0a086b8",
+            "installed_sha256": "211a16b41f9026e6180d5de97f30529043e623c4724ff7eef307e24a0b486cc1"
+        },
+        "erfolg.php": {
+            "backup": "files/erfolg.php.bak",
+            "original_sha256": "daeeeb6b9d679ab72975de3cd8056dd32b58511f3e3cf8fd2935cfa7f21d136e",
+            "installed_sha256": "0aa2b915720855e7cd03a06366c5561e3b6eb95872d5787f1900f2edf3caa085"
+        },
+        "errors/404.php": {
+            "backup": "files/errors/404.php.bak",
+            "original_sha256": "8c01e9892185e993e0d45a06d2bea1c607e528921f5f12ab9f398fc4f3b3c0df",
+            "installed_sha256": "d68283ef1087a4816f1e3c8ce00b8b35e88ef548bc49b72ece95c09fccfe9158"
+        },
+        "errors/500.php": {
+            "backup": "files/errors/500.php.bak",
+            "original_sha256": "3916a90f288b9d9cc32ff48ae65194e0605ab609885c08325253f6fcb05c9f6f",
+            "installed_sha256": "e0617fcec4f0cd6995e2fc084168dd354b288ea507d156bd1a86b99e9352f234"
+        },
+        "faecher.php": {
+            "backup": "files/faecher.php.bak",
+            "original_sha256": "dbff0cd2f4c8f93d82c4d68279238f3ea03b0e6b62361daf5355235f7875c029",
+            "installed_sha256": "70b6c593253732cc032cb26207b8d0a1b24fec39f5cd186b2521062d63e8198e"
+        },
+        "faq.php": {
+            "backup": "files/faq.php.bak",
+            "original_sha256": "b517aecdb11c88160161ad079703eca86d3cc83c4066ad230f9c89cb2bbc331c",
+            "installed_sha256": "d58737ca05eb5e75a02b0ad19fd566c52cb823b2455d6375d8afd99679dc8362"
+        },
+        "impressum.php": {
+            "backup": "files/impressum.php.bak",
+            "original_sha256": "a4e6d1fd2138ad8243d25a66f043cc94f0bd5031103b2994b089d2253c607a4a",
+            "installed_sha256": "c184c7c63c086a20df478776c36fb6b68ef34d61dae80e2f90e59c73b2c583ea"
+        },
+        "includes/area-page.php": {
+            "backup": "files/includes/area-page.php.bak",
+            "original_sha256": "93f0fba7b915dcd8f38f91015281fcd085a53307db7d0e7b576753b44ec3a011",
+            "installed_sha256": "832dbae0b29ca66dcfe8d70e31ade0583daf28dc3cd255af6718087e2371706a"
+        },
+        "includes/school-type-page.php": {
+            "backup": "files/includes/school-type-page.php.bak",
+            "original_sha256": "ad1444a4c4ccc82f0d678dbc911b21c3bfae5be524dddd669c482fa4a46d1ea9",
+            "installed_sha256": "e8a367f6fae7d6a68cc2fa31f904afee32d69486228b013a173974ac5a4cbdaf"
+        },
+        "includes/subject-page.php": {
+            "backup": "files/includes/subject-page.php.bak",
+            "original_sha256": "33abfae31a42b50881877fe964e0913f49e6ccc1b99b424aecd172ae78c04ca3",
+            "installed_sha256": "5de0613c435c972f0072089ad7855238e3987707b839d77c0c0c30ce02ce301a"
+        },
+        "includes/tool-page.php": {
+            "backup": "files/includes/tool-page.php.bak",
+            "original_sha256": "36091e6c8d048dacf4bbe424994f5cb9adee327bcef85eb5a239bbe87f15c4f2",
+            "installed_sha256": "6c36c2ce8f74cc45b08e2defbd9e73862d0384cd1844dd8396b564cf3e72be05"
+        },
+        "index.php": {
+            "backup": "files/index.php.bak",
+            "original_sha256": "3c4039afc9e7862522e8b8412138bd0d1e46547b7205efbca61f5c7710662256",
+            "installed_sha256": "2bcb6c7e946d4978618fbee9c45699ea85a0829525035f4b84b6ff1e281d42d3"
+        },
+        "intern/includes/portal-header.php": {
+            "backup": "files/intern/includes/portal-header.php.bak",
+            "original_sha256": "8035743d138d3bda0846bf2ae6b7670832a7165eb67ae9b5cfcdb26727033387",
+            "installed_sha256": "1f0ba54300009cef84c538db3635b544f22aa28e63cb9f1492ffcbf5d58e33f0"
+        },
+        "intern/login.php": {
+            "backup": "files/intern/login.php.bak",
+            "original_sha256": "2fea8064e8088c5fa19a0824eec4cfa1fb039586a6c952f67c1a8ad9794b6628",
+            "installed_sha256": "dc494da1a145cfd1a2b633ae81560a667e628c0e1fff12e4b42a386d6c6d5c04"
+        },
+        "intern/zugriff-verweigert.php": {
+            "backup": "files/intern/zugriff-verweigert.php.bak",
+            "original_sha256": "b6f57fa8eec1485e2fdfadb80fb71b478070063421db0905bbbf50c600b7bedb",
+            "installed_sha256": "44fc3967d556114a1a828a67348fbd46d5315652567710d093c4a49962aac84f"
+        },
+        "jobs.php": {
+            "backup": "files/jobs.php.bak",
+            "original_sha256": "8f470cc6ac4eb2a2549383bd7004ffc2a3b4daf18febb0ba46c27c55fe23603b",
+            "installed_sha256": "ca66b3ab1ff05dbb52968a5df459b38df343127cd1d99337df73da6fbe4468cf"
+        },
+        "karriere-detail.php": {
+            "backup": "files/karriere-detail.php.bak",
+            "original_sha256": "e504adeb843438beca600f386924bd4d25e7456f7947f2700d00c1c1f026d3df",
+            "installed_sha256": "ec7e54e8ffd3a4ef3f3bdeaf2a9e2071da60da3608f46da745b18092aba82935"
+        },
+        "karriere.php": {
+            "backup": "files/karriere.php.bak",
+            "original_sha256": "19a01e6ab9e06ea02cda208bd654d5dcbacd8d4eaf817e964988b9e2a9df6324",
+            "installed_sha256": "07a051916b7ae45da70cd88d7e17836ab0006d2eb134f5e1e2a9f3f20efd7db9"
+        },
+        "kontakt.php": {
+            "backup": "files/kontakt.php.bak",
+            "original_sha256": "4b0f52f44b52158a3dcfa3692651aca7c0659f8b900d3b5429eefacd5bf86b3b",
+            "installed_sha256": "28534084fc1a2ef9eea9e5d1d079ff4a61513d209305bc1939ae1df4120027af"
+        },
+        "lernwerkzeuge.php": {
+            "backup": "files/lernwerkzeuge.php.bak",
+            "original_sha256": "5fa795f0dfbbebbd60d331fa925566c6855e4ff822238d55ff399c51386bea47",
+            "installed_sha256": "2c8ce33467d1cab7f938e068fc97226edb4492a64d65967d256ee85872844492"
+        },
+        "methodik.php": {
+            "backup": "files/methodik.php.bak",
+            "original_sha256": "86b72f0a27222be2e352e825146574e1e91d9d4ac31e8d330722a149409a8065",
+            "installed_sha256": "97ce5ec3256ceef3355feb6cc1d9b10e5a2cde11858cd5c52f4d079a7e3dd741"
+        },
+        "nachhilfe-in-leipzig.php": {
+            "backup": "files/nachhilfe-in-leipzig.php.bak",
+            "original_sha256": "a31171df398efeadc6c436e889863b1e896109b41fa887106119704cc4edfba7",
+            "installed_sha256": "f29a6027cd934e6ae84d406c0fa46f90c4f027d94f22d52a5f380fbb2c6cbeb8"
+        },
+        "offline.php": {
+            "backup": "files/offline.php.bak",
+            "original_sha256": "b7d019de7381646253fa7d5c6e034aea38dd9c70dc50c2320c554d918c08cb5e",
+            "installed_sha256": "6422925e4cae74543f612937606fac13a32ea2726cb0e8d505584fed48e710cf"
+        },
+        "preise.php": {
+            "backup": "files/preise.php.bak",
+            "original_sha256": "282514f87da717cd6ccb66815b0ec5b13da5409fd6213781633f62d43ebd07d2",
+            "installed_sha256": "641788f8ecf7b134e37b6ccd41f6709b3f7043fdcbec329df850146f5607629d"
+        },
+        "schulformen.php": {
+            "backup": "files/schulformen.php.bak",
+            "original_sha256": "a18c17aee8e0c236f8141e86b8b129f939432d76abab2703e1c069c0bf152c82",
+            "installed_sha256": "b96debf04c89678b2ac0cfed1bd4e441917462c5b5b1bd26324026a11b032ee5"
+        },
+        "sitemap.php": {
+            "backup": "files/sitemap.php.bak",
+            "original_sha256": "b8f67f9703b081995d90f4aac46a93b63abfde843e0403fa7fe2998947eb3357",
+            "installed_sha256": "f54fb2464e2c84d0fe7ac9cd22d1a3903613723996f390763651a3e8dba5e303"
+        },
+        "suche.php": {
+            "backup": "files/suche.php.bak",
+            "original_sha256": "6b86c50a623f8dba95928db0d61ab49d08aee31ee866acc2e8b294dbc56a1a53",
+            "installed_sha256": "3c35f605263bf8f4144c9135ee2402f374dca1f62ff7cf20ab0e7580f4e298ed"
+        },
+        "tutor-bewertungen.php": {
+            "backup": "files/tutor-bewertungen.php.bak",
+            "original_sha256": "696f322b56cd5edf27e29d94651ef8c6dca4bd8edc3dae3f982006e3e76835b2",
+            "installed_sha256": "ae532cd6f2f2c04e33735d6394f8259453815feedacc3c1be715cf7a8447f1a2"
+        },
+        "ueber-mich.php": {
+            "backup": "files/ueber-mich.php.bak",
+            "original_sha256": "c9b4369ada0f60a09471c34c9d3646162722961ce1bb0ec103071a7a0b8ac0bd",
+            "installed_sha256": "15b05b603c07926bcc5b1eb22115df37de5084736f76b46312ea2c697fc02133"
+        },
+        "warum-easyit.php": {
+            "backup": "files/warum-easyit.php.bak",
+            "original_sha256": "0a2180113d9345f00944fcd6c859c0c472d9920330789f4d62751456c5309a1b",
+            "installed_sha256": "ca9e26d5b3fa542ab07bed012be429afab4b144d293f1561cf89f64de6312435"
+        }
+    }
+}

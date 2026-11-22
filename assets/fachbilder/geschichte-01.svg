@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="720" viewBox="0 0 1200 720" role="img" aria-label="Geschichte: Zeitleisten">
+  <defs>
+   <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#08284f"/><stop offset="1" stop-color="#0a1931"/></linearGradient>
+   <radialGradient id="shine"><stop stop-color="#185c83" stop-opacity=".6"/><stop offset="1" stop-color="#185c83" stop-opacity="0"/></radialGradient>
+  </defs>
+  <rect width="1200" height="720" fill="url(#bg)"/>
+  <circle cx="1049" cy="-10" r="382" fill="url(#shine)"/>
+  <path d="M0 650 H1200" stroke="#226c8d" stroke-width="2"/>
+  <text x="76" y="121" font-family="Arial,Helvetica,sans-serif" font-size="24" font-weight="700" fill="#37dce9" letter-spacing="2">GESCHICHTE · NACHHILFE LEIPZIG</text>
+  <rect x="72" y="156" width="74" height="7" rx="3" fill="#31d6e3"/>
+  <text x="76" y="335" font-family="Arial,Helvetica,sans-serif" font-size="42" font-weight="700" fill="#ffffff" >Zeitleisten</text>
+  <text x="76" y="515" font-family="Arial,Helvetica,sans-serif" font-size="23" font-weight="400" fill="#bedff2" >Ereignisse einordnen</text>
+  <rect x="75" y="568" width="205" height="46" rx="23" fill="#103e62" stroke="#2b8daf"/>
+  <text x="102" y="598" font-family="Arial,Helvetica,sans-serif" font-size="20" font-weight="600" fill="#99eff6" >Verstehen · Üben</text>
+  <rect x="686" y="170" width="435" height="390" rx="28" fill="#0a355c" stroke="#1b6385" stroke-width="2"/><line x1="740" y1="384" x2="1082" y2="384" stroke="#79e2eb" stroke-width="7" stroke-linecap="round" /><circle cx="780" cy="384" r="14" fill="#f4be6f" stroke="none" stroke-width="0"/><text x="737" y="326" font-family="Arial,Helvetica,sans-serif" font-size="21" font-weight="500" fill="#e6f5ff" >Antike</text><text x="743" y="433" font-family="Arial,Helvetica,sans-serif" font-size="21" font-weight="500" fill="#a6d9ea" >−500</text><circle cx="917" cy="384" r="14" fill="#f4be6f" stroke="none" stroke-width="0"/><text x="874" y="326" font-family="Arial,Helvetica,sans-serif" font-size="21" font-weight="500" fill="#e6f5ff" >Neuzeit</text><text x="880" y="433" font-family="Arial,Helvetica,sans-serif" font-size="21" font-weight="500" fill="#a6d9ea" >1500</text><circle cx="1054" cy="384" r="14" fill="#f4be6f" stroke="none" stroke-width="0"/><text x="1011" y="326" font-family="Arial,Helvetica,sans-serif" font-size="21" font-weight="500" fill="#e6f5ff" >Heute</text><text x="1017" y="433" font-family="Arial,Helvetica,sans-serif" font-size="21" font-weight="500" fill="#a6d9ea" >2026</text>
+  <text x="76" y="690" font-family="Arial,Helvetica,sans-serif" font-size="19" font-weight="500" fill="#6cb2cc" >01 / 04</text>
+  </svg>

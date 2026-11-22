@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="720" viewBox="0 0 1200 720" role="img" aria-label="Chemie: Stoffe &amp; Reaktionen">
+  <defs>
+   <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#08284f"/><stop offset="1" stop-color="#0a1931"/></linearGradient>
+   <radialGradient id="shine"><stop stop-color="#185c83" stop-opacity=".6"/><stop offset="1" stop-color="#185c83" stop-opacity="0"/></radialGradient>
+  </defs>
+  <rect width="1200" height="720" fill="url(#bg)"/>
+  <circle cx="1049" cy="-10" r="382" fill="url(#shine)"/>
+  <path d="M0 650 H1200" stroke="#226c8d" stroke-width="2"/>
+  <text x="76" y="121" font-family="Arial,Helvetica,sans-serif" font-size="24" font-weight="700" fill="#37dce9" letter-spacing="2">CHEMIE · NACHHILFE LEIPZIG</text>
+  <rect x="72" y="156" width="74" height="7" rx="3" fill="#31d6e3"/>
+  <text x="76" y="335" font-family="Arial,Helvetica,sans-serif" font-size="42" font-weight="700" fill="#ffffff" >Stoffe &amp; Reaktionen</text>
+  <text x="76" y="515" font-family="Arial,Helvetica,sans-serif" font-size="23" font-weight="400" fill="#bedff2" >Beobachten und erklären</text>
+  <rect x="75" y="568" width="205" height="46" rx="23" fill="#103e62" stroke="#2b8daf"/>
+  <text x="102" y="598" font-family="Arial,Helvetica,sans-serif" font-size="20" font-weight="600" fill="#99eff6" >Verstehen · Üben</text>
+  <rect x="686" y="170" width="435" height="390" rx="28" fill="#0a355c" stroke="#1b6385" stroke-width="2"/><path d="M835 265 H975 M860 265 V331 L798 462 Q790 491 830 491 H991 Q1026 491 1008 458 L953 330 V265" stroke="#b5f4ff" stroke-width="7" fill="none" stroke-linecap="round" stroke-linejoin="round" /><path d="M827 436 Q903 418 981 434 L1006 469 Q1009 478 988 478 H833 Q814 478 822 461 Z" stroke="none" stroke-width="5" fill="#22bdd188" stroke-linecap="round" stroke-linejoin="round" /><circle cx="854" cy="399" r="11" fill="#7cefe8" stroke="none" stroke-width="0"/><circle cx="900" cy="442" r="15" fill="#7cefe8" stroke="none" stroke-width="0"/><circle cx="951" cy="388" r="13" fill="#7cefe8" stroke="none" stroke-width="0"/><circle cx="925" cy="463" r="9" fill="#7cefe8" stroke="none" stroke-width="0"/><circle cx="884" cy="372" r="7" fill="#7cefe8" stroke="none" stroke-width="0"/><circle cx="974" cy="460" r="7" fill="#7cefe8" stroke="none" stroke-width="0"/><text x="811" y="535" font-family="Arial,Helvetica,sans-serif" font-size="27" font-weight="500" fill="#b1effa" >Experiment</text>
+  <text x="76" y="690" font-family="Arial,Helvetica,sans-serif" font-size="19" font-weight="500" fill="#6cb2cc" >01 / 04</text>
+  </svg>

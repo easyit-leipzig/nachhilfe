@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="720" viewBox="0 0 1200 720" role="img" aria-label="Biologie: Genetik">
+  <defs>
+   <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#08284f"/><stop offset="1" stop-color="#0a1931"/></linearGradient>
+   <radialGradient id="shine"><stop stop-color="#185c83" stop-opacity=".6"/><stop offset="1" stop-color="#185c83" stop-opacity="0"/></radialGradient>
+  </defs>
+  <rect width="1200" height="720" fill="url(#bg)"/>
+  <circle cx="1049" cy="-10" r="382" fill="url(#shine)"/>
+  <path d="M0 650 H1200" stroke="#226c8d" stroke-width="2"/>
+  <text x="76" y="121" font-family="Arial,Helvetica,sans-serif" font-size="24" font-weight="700" fill="#37dce9" letter-spacing="2">BIOLOGIE · NACHHILFE LEIPZIG</text>
+  <rect x="72" y="156" width="74" height="7" rx="3" fill="#31d6e3"/>
+  <text x="76" y="335" font-family="Arial,Helvetica,sans-serif" font-size="42" font-weight="700" fill="#ffffff" >Genetik</text>
+  <text x="76" y="515" font-family="Arial,Helvetica,sans-serif" font-size="23" font-weight="400" fill="#bedff2" >Erbinformation verstehen</text>
+  <rect x="75" y="568" width="205" height="46" rx="23" fill="#103e62" stroke="#2b8daf"/>
+  <text x="102" y="598" font-family="Arial,Helvetica,sans-serif" font-size="20" font-weight="600" fill="#99eff6" >Verstehen · Üben</text>
+  <rect x="686" y="170" width="435" height="390" rx="28" fill="#0a355c" stroke="#1b6385" stroke-width="2"/><path d="M912.0,240 L935.3,250 L957.4,260 L976.9,270 L992.7,280 L1003.9,290 L1010.0,300 L1010.5,310 L1005.5,320 L995.2,330 L980.2,340 L961.4,350 L939.8,360 L916.6,370 L893.1,380 L870.7,390 L850.7,400 L834.1,410 L821.9,420 L814.8,430 L813.1,440 L817.1,450 L826.4,460 L840.5,470 L858.7,480 L879.8,490 L902.8,500" stroke="#60dce6" stroke-width="8" fill="none" stroke-linecap="round" stroke-linejoin="round" /><path d="M912.0,240 L888.7,250 L866.6,260 L847.1,270 L831.3,280 L820.1,290 L814.0,300 L813.5,310 L818.5,320 L828.8,330 L843.8,340 L862.6,350 L884.2,360 L907.4,370 L930.9,380 L953.3,390 L973.3,400 L989.9,410 L1002.1,420 L1009.2,430 L1010.9,440 L1006.9,450 L997.6,460 L983.5,470 L965.3,480 L944.2,490 L921.2,500" stroke="#f1c57b" stroke-width="8" fill="none" stroke-linecap="round" stroke-linejoin="round" /><line x1="912.0" y1="240" x2="912.0" y2="240" stroke="#6caaed" stroke-width="4" stroke-linecap="round" /><line x1="976.8527118206733" y1="270" x2="847.1472881793267" y2="270" stroke="#6caaed" stroke-width="4" stroke-linecap="round" /><line x1="1010.0004045608403" y1="300" x2="813.9995954391597" y2="300" stroke="#6caaed" stroke-width="4" stroke-linecap="round" /><line x1="995.2379234737298" y1="330" x2="828.7620765262702" y2="330" stroke="#6caaed" stroke-width="4" stroke-linecap="round" /><line x1="939.7823105519213" y1="360" x2="884.2176894480787" y2="360" stroke="#6caaed" stroke-width="4" stroke-linecap="round" /><line x1="870.7445564764035" y1="390" x2="953.2554435235965" y2="390" stroke="#6caaed" stroke-width="4" stroke-linecap="round" /><line x1="821.8756525132325" y1="420" x2="1002.1243474867675" y2="420" stroke="#6caaed" stroke-width="4" stroke-linecap="round" /><line x1="817.0664968083493" y1="450" x2="1006.9335031916507" y2="450" stroke="#6caaed" stroke-width="4" stroke-linecap="round" /><line x1="858.6681764497705" y1="480" x2="965.3318235502295" y2="480" stroke="#6caaed" stroke-width="4" stroke-linecap="round" />
+  <text x="76" y="690" font-family="Arial,Helvetica,sans-serif" font-size="19" font-weight="500" fill="#6cb2cc" >02 / 04</text>
+  </svg>

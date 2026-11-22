@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="720" viewBox="0 0 1200 720" role="img" aria-label="Physik: Atom- &amp; Kernphysik">
+  <defs>
+   <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#08284f"/><stop offset="1" stop-color="#0a1931"/></linearGradient>
+   <radialGradient id="shine"><stop stop-color="#185c83" stop-opacity=".6"/><stop offset="1" stop-color="#185c83" stop-opacity="0"/></radialGradient>
+  </defs>
+  <rect width="1200" height="720" fill="url(#bg)"/>
+  <circle cx="1049" cy="-10" r="382" fill="url(#shine)"/>
+  <path d="M0 650 H1200" stroke="#226c8d" stroke-width="2"/>
+  <text x="76" y="121" font-family="Arial,Helvetica,sans-serif" font-size="24" font-weight="700" fill="#37dce9" letter-spacing="2">PHYSIK · NACHHILFE LEIPZIG</text>
+  <rect x="72" y="156" width="74" height="7" rx="3" fill="#31d6e3"/>
+  <text x="76" y="335" font-family="Arial,Helvetica,sans-serif" font-size="42" font-weight="700" fill="#ffffff" >Atom- &amp; Kernphysik</text>
+  <text x="76" y="515" font-family="Arial,Helvetica,sans-serif" font-size="23" font-weight="400" fill="#bedff2" >Teilchen und Strahlung</text>
+  <rect x="75" y="568" width="205" height="46" rx="23" fill="#103e62" stroke="#2b8daf"/>
+  <text x="102" y="598" font-family="Arial,Helvetica,sans-serif" font-size="20" font-weight="600" fill="#99eff6" >Verstehen · Üben</text>
+  <rect x="686" y="170" width="435" height="390" rx="28" fill="#0a355c" stroke="#1b6385" stroke-width="2"/><circle cx="901" cy="373" r="48" fill="#f6c268" stroke="none" stroke-width="0"/><text x="873" y="384" font-family="Arial,Helvetica,sans-serif" font-size="23" font-weight="700" fill="#07304d" >p+n</text><ellipse cx="901" cy="374" rx="163" ry="72" fill="none" stroke="#62d6e9" stroke-width="4" transform="rotate(0,901,374)"/><ellipse cx="901" cy="374" rx="163" ry="72" fill="none" stroke="#62d6e9" stroke-width="4" transform="rotate(60,901,374)"/><ellipse cx="901" cy="374" rx="163" ry="72" fill="none" stroke="#62d6e9" stroke-width="4" transform="rotate(120,901,374)"/><circle cx="1060" cy="377" r="11" fill="#9ceff1" stroke="none" stroke-width="0"/><circle cx="816" cy="270" r="11" fill="#9ceff1" stroke="none" stroke-width="0"/><circle cx="826" cy="480" r="11" fill="#9ceff1" stroke="none" stroke-width="0"/>
+  <text x="76" y="690" font-family="Arial,Helvetica,sans-serif" font-size="19" font-weight="500" fill="#6cb2cc" >03 / 04</text>
+  </svg>
